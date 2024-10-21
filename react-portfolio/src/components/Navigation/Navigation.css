@@ -34,13 +34,18 @@
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
-    background-color: #DCAFBB;
+    /* background-color: #DCAFBB; */
     List-style: none;
 }
 
 #david{
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
+    /* color: #000000; */
     font-size: 50px;
     position: fixed;
     left: 0;   
+}
+
+a {
+    color: #000000;
 }
