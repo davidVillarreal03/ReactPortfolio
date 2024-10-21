@@ -16,12 +16,13 @@ const router = createBrowserRouter([
         element: <App />, 
         errorElement: <Error />,
         children: [
+            // {
+            //     index: true,
+            //     element: <Home />
+            // }, 
             {
                 index: true,
-                element: <Home />
-            }, 
-            {
-                path: '/About',
+                // path: '/About',
                 element: <AboutMe />
             },
             {

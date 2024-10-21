@@ -7,7 +7,7 @@ const styles = {
         height: '50px',
         display: 'flex',
         justifyContent: 'space-evenly',   
-        paddingTop: '10px',
+        paddingTop: '12px',
         paddingBottom: '50px',
         backgroundColor: 'rgba(253 198 163)',
     },
