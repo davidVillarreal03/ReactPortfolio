@@ -113,9 +113,9 @@ export default function Portfolio() {
 
             </a>
 
-            <a href="https://github.com/davidVillarreal03/Tech-Blog">
+            <a href="https://github.com/davidVillarreal03/Personal-Blog">
 
-            <p style={styles.project3}>Tech-Blog</p>
+            <p style={styles.project3}>Personal-Blog</p>
 
             </a>
 
