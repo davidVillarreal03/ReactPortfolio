@@ -27,73 +27,89 @@ const styles = {
         borderBottomLeftRadius: '20px',
         padding: '10px',
     },
-    p: {
-        fontFamily: 'Arial, Helvetica, sans-serif',
-        fontsize: '20px', 
-        color: '#000000',
-        fontSize: '30px',
-        padding: '50px',
-        // backgroundColor: '#AF795D',
+    projectImg: {
+      position: 'absolute',
+      border: '10px solid #AF795D',  
     },
+    projectTag: {
+        // position: 'absolute',
+        fontSize: '20px',
+        backgroundColor: '#AF795D',
+        color: '#EEEFEF',
+        padding: '10px',
+        width: '210px',
+        height: '50px',
+        borderTopRightRadius: '102px',
+    }, 
+    sizeImg: {
+        width: '200px',
+        height: '200px',
+    },
+
     project1:{
         position: 'absolute',
-        top: '100px',
-        fontSize: '20px',
+        top: '270px',
         left: '50px',
-        backgroundColor: '#AF795D',
-        color: '#EEEFEF',
-        padding: '10px',
-        borderRadius: '20px',
     },
+    project1img:{
+        position: 'absolute',
+        top: '100px',
+        left: '50px',
+    },
+
     project2:{
         position: 'absolute',
-        top: '100px',
-        fontSize: '20px',
-        left: '500px',
-        backgroundColor: '#AF795D',
-        color: '#EEEFEF',
-        padding: '10px',
-        borderRadius: '20px',
+        top: '270px',
+        left: '400px',
     },
+    project2img:{
+        position: 'absolute',
+        top: '100px',
+        left: '400px',
+    },
+
     project3:{
         position: 'absolute',
-        top: '100px',
-        fontSize: '20px',
-        left: '1000px',
-        backgroundColor: '#AF795D',
-        color: '#EEEFEF',
-        padding: '10px',
-        borderRadius: '20px',
+        top: '270px',
+        left: '750px',
     },
+    project3img:{
+        position: 'absolute',
+        top: '100px',
+        left: '750px',
+    },
+
     project4:{
         position: 'absolute',
-        top: '200px',
-        fontSize: '20px',
+        top: '520px',
         left: '50px',
-        backgroundColor: '#AF795D',
-        color: '#EEEFEF',
-        padding: '10px',
-        borderRadius: '20px',
     },
+    project4img:{
+        position: 'absolute',
+        top: '350px',
+        left: '50px',
+    },
+
     project5:{
         position: 'absolute',
-        top: '200px',
-        fontSize: '20px',
-        left: '500px',
-        backgroundColor: '#AF795D',
-        color: '#EEEFEF',
-        padding: '10px',
-        borderRadius: '20px',
+        top: '520px',
+        left: '400px',
     },
+    project5img:{
+        position: 'absolute',
+        top: '350px',
+        left: '400px',
+    },
+    
     project6:{
         position: 'absolute',
-        top: '200px',
-        fontSize: '20px',
-        left: '1000px',
-        backgroundColor: '#AF795D',
-        color: '#EEEFEF',
-        padding: '10px',
-        borderRadius: '20px',
+        top: '520px',
+        left: '750px',
+    },
+    project6img:{
+        position: 'absolute',
+        top: '350px',
+        left: '750px',
     },
 }
 
@@ -101,42 +117,96 @@ export default function Portfolio() {
     return (
         <div style={styles.container}>
             <h1 style={styles.h1}>Portfolio</h1>
-            <a href="https://github.com/davidVillarreal03/Employee-Tracker">
 
-            <p style={styles.project1}>Employee Tracker</p>
+{/* Use this as reference for the other project templates. */}
+            <a href="https://github.com/davidVillarreal03/Employee-Tracker">
+            
+            <div style={styles.project1img}>
+                <div style={styles.projectImg}>
+                <img style={styles.sizeImg}src="https://www.scnsoft.com/blog-pictures/software-development-outsourcing/employee-monitoring-software.png" alt="Image of an employee with a laptop and a magnifying glass"/>
+                </div>
+            </div>
+
+            <div style={styles.project1}>
+                <p style={styles.projectTag}>Employee Tracker</p>
+            </div>
 
             </a>
+{/* Use this as reference for the other project templates. */}
 
             <a href="https://github.com/davidVillarreal03/E-commerce-Back-End">
+            
+            <div style={styles.project2img}>
+                
+                <div style={styles.projectImg}>
+                <img style={styles.sizeImg} src="https://d1u4v6449fgzem.cloudfront.net/2020/03/The-Ecommerce-Business-Model-Explained.jpg"/>
+                </div>
+            
+            </div>
 
-            <p style={styles.project2}>E-commerce Back-end</p>
+            <div style={styles.project2}>
+                <p style={styles.projectTag}>E-commerce</p>
+            </div>
 
             </a>
-
+{/* break */}
             <a href="https://github.com/davidVillarreal03/Personal-Blog">
 
-            <p style={styles.project3}>Personal-Blog</p>
+            <div style={styles.project3img}>
+                <div style={styles.projectImg}>
+                    <img style={styles.sizeImg} src="" />
+                </div>
+            </div>
+
+            <div style={styles.project3}>
+                <p style={styles.projectTag}>Personal-Blog</p>
+            </div>
 
             </a>
-
+{/* break? */}
             <a href="https://github.com/demichele-c/ItinerAi">
+            
+            <div style={styles.project4img}>
+                <div style={styles.projectImg}>
+                    <img style={styles.sizeImg} src=""/>
+                </div>
+            </div>
 
-            <p style={styles.project4}>ItinerAi</p>
+            <div style={styles.project4}>
+                <p style={styles.projectTag}>ItinerAi</p>
+            </div>
 
             </a>
-
+{/* break */}
             <a href="https://github.com/davidVillarreal03/NoteTaker-Express">
 
-            <p style={styles.project5}>Note Taker</p>
+            <div style={styles.project5img}>
+                <div style={styles.projectImg}>
+                    <img style={styles.sizeImg} src=""/>
+                </div>
+            </div>
+
+            <div style={styles.project5}>
+                <p style={styles.projectTag}>Note Taker</p>
+            </div>
 
             </a>
+{/* break */}
 
             <a href="https://github.com/davidVillarreal03/Weather-DashBoard">
 
-            <p style={styles.project6}>Weather Dashboard</p>
+            <div style={styles.project6img}>
+                <div style={styles.projectImg}>
+                    <img style={styles.sizeImg} src=""/>
+                </div>
+            </div>
+
+            <div style={styles.project6}>
+                <p style={styles.projectTag}>Weather Dashboard</p>
+            </div>
 
             </a>
-
+{/* break */}
         </div>
     )
 }
