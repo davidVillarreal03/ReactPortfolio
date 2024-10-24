@@ -1,3 +1,10 @@
+import note from './Images/note.jpg';
+import challenge from './Images/challenge-4.jpg';
+import weather from './Images/weather.jpg';
+import ItinerAi from './Images/itinerai.jpg';
+
+
+
 const styles = {
     container: {
         position: 'fixed',
@@ -32,7 +39,6 @@ const styles = {
       border: '10px solid #AF795D',  
     },
     projectTag: {
-        // position: 'absolute',
         fontSize: '20px',
         backgroundColor: '#AF795D',
         color: '#EEEFEF',
@@ -154,7 +160,7 @@ export default function Portfolio() {
 
             <div style={styles.project3img}>
                 <div style={styles.projectImg}>
-                    <img style={styles.sizeImg} src="" />
+                    <img style={styles.sizeImg} src={challenge} />
                 </div>
             </div>
 
@@ -168,7 +174,7 @@ export default function Portfolio() {
             
             <div style={styles.project4img}>
                 <div style={styles.projectImg}>
-                    <img style={styles.sizeImg} src=""/>
+                    <img style={styles.sizeImg} src={ItinerAi}/>
                 </div>
             </div>
 
@@ -182,7 +188,7 @@ export default function Portfolio() {
 
             <div style={styles.project5img}>
                 <div style={styles.projectImg}>
-                    <img style={styles.sizeImg} src=""/>
+                    <img style={styles.sizeImg} src={note}/>
                 </div>
             </div>
 
@@ -197,7 +203,7 @@ export default function Portfolio() {
 
             <div style={styles.project6img}>
                 <div style={styles.projectImg}>
-                    <img style={styles.sizeImg} src=""/>
+                    <img style={styles.sizeImg} src={weather}/>
                 </div>
             </div>
 
