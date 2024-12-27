@@ -1,0 +1,27 @@
+.footer{
+    
+    padding: 0px 0px;
+    justify-content: center;
+    /* width: 100%; */
+    display: flex;
+    border: 5px solid #c5c6c7;
+    background-color: #936b5c;
+}
+
+
+.footer a {
+    margin: 40px;
+    transition: all 1s ease;
+    padding: 0px;
+    font-size: 40px;
+    color: #e4e1d4;
+}
+
+.footer a:hover{
+    transition: all 1s ease;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    background-color: #7a3c3c;
+    color: #f8f8f2; 
+    transition: all;
+}

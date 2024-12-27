@@ -6,7 +6,7 @@ import App from './App';
 import Error from './pages/Error';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
-import AboutMe from './pages/AboutMe';
+import AboutMe from './pages/AboutMe/AboutMe';
 import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
 
