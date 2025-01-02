@@ -1,7 +1,7 @@
-import note from './Images/note.jpg';
-import challenge from './Images/challenge-4.jpg';
-import weather from './Images/weather.jpg';
-import ItinerAi from './Images/itinerai.jpg';
+import note from '../Images/note.jpg';
+import challenge from '../Images/challenge-4.jpg';
+import weather from '../Images/weather.jpg';
+import ItinerAi from '../Images/itinerai.jpg';
 
 
 

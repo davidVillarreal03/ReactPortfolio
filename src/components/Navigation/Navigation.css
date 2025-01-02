@@ -1,5 +1,21 @@
 body{
-    background-color: #a2a3a5;
+    background-color: #b0b1b4;
+}
+h1{
+    font-family: "Spectral SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+h2{
+    font-family: "Spectral SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+p{
+    font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #e4e1d4;
 }
 .header{
     margin: 5px;
@@ -7,11 +23,13 @@ body{
     background-color: #936b5c;
 }
 .header h1{
+    text-align: center;
+    width: 100%;
     margin-left: 10px;
-    font-weight: 500;
+    /* font-weight: 500;
     font-style: italic;
     font-size: 30px;
-    color: #e4e1d4;
+    color: #e4e1d4; */
 }
 .nav{
     /* justify-items: center; */

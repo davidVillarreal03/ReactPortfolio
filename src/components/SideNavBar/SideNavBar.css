@@ -1,0 +1,141 @@
+.menu-btn {
+    position: relative;
+    top: 10px;
+    left: 120px;
+    background-color: #2c2c2c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 0.7rem;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.menu-btn:focus{
+    outline: none;
+}
+.close-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #2c2c2c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 0.7rem;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1000;
+}
+.side-nav {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100%;
+    width: 250px;
+    background-color: #a79e8e;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+    transition: left 0.3s ease-in-out;
+    z-index: 999;
+    /* padding-top: 60px; */
+}
+.side-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.side-nav ul li {
+    margin: 15px 0;
+    text-align: right;
+    padding-right: 20px;
+}
+  
+.side-nav ul li a {
+    font-family: "Spectral SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #e8e8e6;
+    font-size: 1.2rem;
+    display: block;
+    padding: 10px;
+    /* border-radius: 5px; */
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+  
+.side-nav ul li a:hover {
+    width: 100%;
+    text-decoration: underline;
+    /* color: maroon; */
+    background-color: #7a3b3f;
+    transition: all 0.3s ease-in-out;
+}
+  
+  /* Active state */
+.side-nav.active {
+    left: 0;
+}
+.name-card{
+    background-color: #8f8676;
+    /* border-radius: 10px; */
+    padding: 30px;
+    text-align: center;
+    /* margin-top: 20px; */
+    font-style: Special Elite;
+    font-weight: 400;
+    font-size: .6rem;
+    color: #e8e8e6;
+
+}
+
+.name-card h1{
+    margin: 0;
+}
+.name-card h2{
+    margin: 0;
+}
+
+.headshot{
+    /* border: 5px solid #c5c6c7; */
+    border-radius: 50%;
+    width: 150px;
+    height: 130px;
+}
+
+
+.contact-container{
+    display: flex;
+    justify-content: center;
+}
+
+.contacts{
+    margin: 10px;
+    font-size: 1.2rem;
+    /* color: #e8e8e6; */
+}
+.contacts a{
+    /* text-align: right; */
+    text-decoration: none;
+    color: #e8e8e6;
+    transition: all 0.5s ease-in-out;
+}
+.contacts a:hover{
+    padding: 0;
+    font-size: 1.5rem;
+    color: maroon;
+    transition: all 0.5s ease-in-out;
+}
+
+
+@media (min-width: 769px) {
+    .menu-btn {
+        display: none;
+    }
+    .side-nav {
+        left: 0;
+    }
+}
