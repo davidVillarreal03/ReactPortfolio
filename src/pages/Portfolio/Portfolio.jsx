@@ -1,17 +1,17 @@
-import note from '../Images/note.jpg';
-import challenge from '../Images/challenge-4.jpg';
-import weather from '../Images/weather.jpg';
-import ItinerAi from '../Images/itinerai.jpg';
+// import note from '../Images/note.jpg';
+// import challenge from '../Images/challenge-4.jpg';
+// import weather from '../Images/weather.jpg';
+// import ItinerAi from '../Images/itinerai.jpg';
 
 
 
 export default function Portfolio() {
     return (
         <div>
-            <h1>Portfolio</h1>
+            {/* <h1>Portfolio</h1> */}
 
 {/* Use this as reference for the other project templates. */}
-            <a href="https://github.com/davidVillarreal03/Employee-Tracker">
+            {/* <a href="https://github.com/davidVillarreal03/Employee-Tracker">
             
             <div>
                 <div>
@@ -23,10 +23,10 @@ export default function Portfolio() {
                 <p>Employee Tracker</p>
             </div>
 
-            </a>
+            </a> */}
 {/* Use this as reference for the other project templates. */}
 
-            <a href="https://github.com/davidVillarreal03/E-commerce-Back-End">
+            {/* <a href="https://github.com/davidVillarreal03/E-commerce-Back-End">
             
             <div>
                 
@@ -40,9 +40,9 @@ export default function Portfolio() {
                 <p>E-commerce</p>
             </div>
 
-            </a>
+            </a> */}
 {/* break */}
-            <a href="https://github.com/davidVillarreal03/Personal-Blog">
+            {/* <a href="https://github.com/davidVillarreal03/Personal-Blog">
 
             <div>
                 <div>
@@ -54,9 +54,9 @@ export default function Portfolio() {
                 <p>Personal-Blog</p>
             </div>
 
-            </a>
+            </a> */}
 {/* break? */}
-            <a href="https://github.com/demichele-c/ItinerAi">
+            {/* <a href="https://github.com/demichele-c/ItinerAi">
             
             <div>
                 <div>
@@ -68,9 +68,9 @@ export default function Portfolio() {
                 <p>ItinerAi</p>
             </div>
 
-            </a>
+            </a> */}
 {/* break */}
-            <a href="https://github.com/davidVillarreal03/NoteTaker-Express">
+            {/* <a href="https://github.com/davidVillarreal03/NoteTaker-Express">
 
             <div>
                 <div>
@@ -82,10 +82,10 @@ export default function Portfolio() {
                 <p>Note Taker</p>
             </div>
 
-            </a>
+            </a> */}
 {/* break */}
 
-            <a href="https://github.com/davidVillarreal03/Weather-DashBoard">
+            {/* <a href="https://github.com/davidVillarreal03/Weather-DashBoard">
 
             <div>
                 <div>
@@ -97,7 +97,7 @@ export default function Portfolio() {
                 <p>Weather Dashboard</p>
             </div>
 
-            </a>
+            </a> */}
 {/* break */}
         </div>
     )

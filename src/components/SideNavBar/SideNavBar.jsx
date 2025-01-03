@@ -9,7 +9,7 @@ const SlideInNavBar = () => {
 
   return (
 
-    <div>
+    <div  className="side-nav-container">
       {/* Menu Button */}
       <button
         className="menu-btn"
