@@ -84,8 +84,8 @@
     justify-content: start;
     align-items: start;
     width: 100%;
-    flex-direction: column;
-    margin-left: 620px;
+    /* flex-direction: column; */
+    /* margin-left: 620px; */
 }
 .project-container{
     display: flex;
@@ -93,27 +93,20 @@
     align-items: start;
     width: 100%;
     flex-direction: column;
+    margin-left: 310px;
 }
 .project-cards{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
-    width: 50%;
+    max-width: 50%;
+    min-width: 50%;
+    height: 500px;
     padding: 30px;
-    background: #cdc5b4 url('../public/Images/grunge-texture.jpg') repeat;
-    /* background: linear-gradient(135deg, #cdc5b4, #7a7973); */
-    border: 1px solid #6d4f3a;
+    background: #cdc5b4 url('../Images/frontOfPolaroid.png') repeat;
     box-shadow: 0px 4px 8px rgba(62, 60, 57, 0.6);
     margin-bottom: 20px;
 }
-
-.project-cards p, a{
-    /* display: none; */
-}
-/* .card-button{
-    display: ;
-} */
 .project-cards a{
     text-decoration: none;
     color: red;
@@ -123,6 +116,7 @@
     left: 150px;
 }
 .project-cards p, h2{
+    color: #2c2c2c;
     text-transform: uppercase;
     font-family: 'oldtype', sans-serif;
 }
@@ -131,8 +125,61 @@
     width: 100%;
 }
 .project-cards img:hover{
-    /* box-shadow: 0px 4px 8px rgba(62, 60, 57, 0.6); */
     filter: drop-shadow(0px 4px 8px rgba(62, 60, 57, 0.6));
+}
+
+/* .backend .project-cards{
+    width: 30.6%;
+} */
+.backOfCard{
+    display: grid;
+    justify-content: center;
+    width: 60%;
+    padding: 50px;
+    background: #cdc5b4 url('../Images/backOfPolaroid.png') no-repeat bottom right /cover;
+    box-shadow: 0px 4px 8px rgba(62, 60, 57, 0.6);
+    margin-bottom: 40px;
+}
+.backOfCard a{
+    width: 10%;
+    font-size: 4rem;
+    position: relative;
+    text-decoration: none;
+    top: 200px;
+    left: 100px;    
+}
+.backOfCard p{
+    position: relative;
+    top: 600px;
+    left: -60px;
+    text-transform: uppercase;
+    font-family: 'oldtype', sans-serif;
+}
+.backend{
+    margin: 0;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 800px 800px;
+    /* column-gap: 0px; */
+    /* width: 50%; */
+}
+.item-1{
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+.item-2{
+    grid-column-start: 2;
+    grid-column-end: 2
+}
+.backend img{
+    width: 100%;
+}
+.backend h1{
+    width: 50%;
+}
+
+.frontend h1{
+    width: 40%;
 }
 .frontend .project-cards{
     width: 30%;
@@ -141,6 +188,10 @@
     width: 100%;
 }
 
+
+.fullstack h1{
+    width: 40%;
+}
 .fullstack .project-cards{
     width: 38%;
 }
