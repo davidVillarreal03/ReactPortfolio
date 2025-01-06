@@ -56,13 +56,19 @@
 }
 .aboutme-preview img{
     width: 150px;
-    height: 120px;
-    border-radius: 80px;
-    overflow: hidden;
+    /* height: 120px; */
+    border-radius: 100px;
+    /* overflow: hidden; */
+    background-color: #6d7055;
     margin-right: 30px;
     margin-left: 30px;
 }
 
+
+.mia img{
+    width: 60%;
+    height: auto;
+}
 .intro-card{
     margin-top: 20px;
     margin-right: 10px;

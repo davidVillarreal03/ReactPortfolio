@@ -1,10 +1,10 @@
 import './Home.css'
+// import './David_Villarreal.pdf'
 export default function Home() {
     return (
         <div className='home-page'>
             <section className='aboutme-preview'>
                 <div className='intro-card'>
-                    <img src='../../Images/head.jpg'></img>
                     <h3>Web Developer</h3>
                     <h1 id='desktop'>Hello World,
                          I am David Villarreal</h1>
@@ -24,13 +24,28 @@ export default function Home() {
                             Passionate about designing functional and tailored applications,
                             I focus on meeting client needs while addressing complex challenges.
                         </p>
-                    <div className='quick-contact'>    
-                        <button id='desktop'>Download Resume</button>
+                    <div className='quick-contact'>
+                        <a href='/David_Villarreal.pdf' download='David_Villarreal.pdf' class='download-btn'>
+                            <button>
+                                <i class='fas fa-download'></i> Download My Resume
+                            </button>
+                        </a>    
+                        <a href='mailto:davidvillarr3al@gmail.com'>
                         <button id='desktop'>Contact Me</button>
-                        <button id='mobile'>Resume</button>
-                        <button id='mobile'>Contact</button>
+                        </a>
+                        <a href='/David_Villarreal.pdf' download='David_Villarreal.pdf' class='download-btn'>
+                            <button id='mobile'>
+                                <i class='fas fa-download'></i> Download My Resume
+                            </button>
+                        </a>    
+                        <a href='mailto:davidvillarr3al@gmail.com'>
+                        <button id='mobile'>Contact Me</button>
+                        </a>
                     </div>
                 </div>
+                <aside className='mia'>
+                    <img src='/Images/mia.png'></img>
+                </aside>
             </section>
             
             <section className='portfolio-preview'>
