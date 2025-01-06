@@ -52,30 +52,28 @@ export default function Home() {
                 <div className='project-container'>
                     
                         <h1>Backend Projects</h1>
-                    <div className='backend'>
+                        need to get images for these projects
+                    {/* <div className='backend'>
                             <div className='item-1'>
                         <div className="project-cards">
                                 <img src='../../Images/employee-monitoring.png'></img>
                                 <h2>Employee Tracker</h2>
                         </div>
                             </div>
-                            {/* <div className='backOfCard'>
-                                <h2>A backend project that allows users to keep track of employees.</h2>
-                                <a href='https://github.com/davidVillarreal03/Employee-Tracker' className='card-button'><i class="fa-brands fa-github"></i></a>
-                            </div> */}
+                           
                         
                         <div className='item-2'>
                             <div className="project-cards">
                                     <img src='../../Images/ecommerce.jpg'></img>
-                                    <h2>E-commerce Back-End</h2>
+                                    <h2>E-commerce Back-End</h2> */}
                             {/* <h2>A backend project that manages products and categories using Sequilize ORM and PostgreSQL.</h2> */}
                             {/* <a href='https://github.com/davidVillarreal03/E-commerce-Back-End' className='card-button'><i class="fa-brands fa-github"></i></a> */}
-                            </div>
+                            {/* </div>
                         </div>
-                    </div>
+                    </div> */}
                     
-                    <div className='frontend'>
                         <h1>Frontend Projects</h1>
+                    <div className='frontend'>
                         <div className="project-cards">
                             <img src='../../Images/challenge-4.jpg'></img>
                             <h2>Personal Blog</h2>
@@ -108,8 +106,8 @@ export default function Home() {
                         </div>
                     </div>
                     
-                    <div className='fullstack'>
                         <h1>Fullstack Projects</h1>
+                    <div className='fullstack'>
                         <div className="project-cards">
                             <img src='../../Images/itinerai.jpg'></img>
                             <h2>ItinerAI</h2>
