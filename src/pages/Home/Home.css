@@ -91,6 +91,7 @@
     width: 100%;
 }
 .project-container{
+    margin-bottom: 40px;
     display: flex;
     justify-content: start;
     align-items: start;
@@ -99,6 +100,8 @@
     margin-left: 310px;
 }
 .project-cards{
+    perspective: 1000px;
+    backface-visibility: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -106,11 +109,8 @@
     min-width: 50%;
     height: 300px;
     padding: 30px;
-    background: #cdc5b4 url('../Images/frontOfPolaroid.png') repeat;
-    background-size: cover;
-    box-shadow: 0px 4px 8px rgba(62, 60, 57, 0.6);
-    margin-bottom: 20px;
-}
+    margin-bottom: 200px;
+}   
 .project-cards a{
     text-decoration: none;
     color: red;
@@ -132,44 +132,13 @@
     filter: drop-shadow(0px 4px 8px rgba(62, 60, 57, 0.6));
 }
 
-.backOfCard{
-    display: grid;
-    justify-content: center;
-    width: 60%;
-    padding: 50px;
-    background: #cdc5b4 url('../Images/backOfPolaroid.png') no-repeat bottom right /cover;
-    box-shadow: 0px 4px 8px rgba(62, 60, 57, 0.6);
-    margin-bottom: 40px;
-}
-.backOfCard a{
-    width: 10%;
-    font-size: 4rem;
-    position: relative;
-    text-decoration: none;
-    top: 200px;
-    left: 100px;    
-}
-.backOfCard p{
-    position: relative;
-    top: 600px;
-    left: -60px;
-    text-transform: uppercase;
-    font-family: 'oldtype', sans-serif;
-}
+
 .backend{
-    /* background-color: #cdc5b4; */
     padding: 40px;
     margin: 10px;
     display: grid;
     width: 80%;
     grid-template-columns: 800px 800px;
-}
-.backend img{
-    width: 100%;
-}
-
-.backend h1{
-    width: 50%;
 }
 
 
@@ -177,46 +146,26 @@
     display: flex;
     justify-content: start;
     align-items: start;
-    /* background-color: #cdc5b4; */
     padding: 10px;
     margin: 10px;
     display: grid;
-    width: 66%;
+    width: 90%;
     grid-template-columns: 700px 700px;
+    margin-bottom: 10px;
 }
-.frontend h1{
-    width: 40%;
-}
-.frontend .project-cards{
-    width: 30%;
-}
-.frontend img{
-    border: 7px solid #E0E0E0;
-    position: relative;
-    top:-30px;
-    width: 100%;
-}
+
+
 
 .fullstack{
     display: flex;
     justify-content: start;
     align-items: start;
-    /* background-color: #cdc5b4; */
     padding: 10px;
     margin: 10px;
-    display: flex;
-    /* display: grid; */
-    width: 41%;
-    /* grid-template-columns: 700px 700px; */
-}
-.fullstack h1{
-    width: 40%;
-}
-.fullstack img{
-    border: 7px solid #E0E0E0;
-    position: relative;
-    top:-30px;
-    width: 100%;
+    display: grid;
+    width: 90%;
+    grid-template-columns: 700px 700px;
+    margin-bottom: 10px;
 }
 .item-1{
     grid-column-start: 1;
@@ -226,6 +175,91 @@
     grid-column-start: 2;
     grid-column-end: 2
 }
+
+.source-btns{
+    display: flex;
+}
+
+.content{
+    transition: transform 0.6s ease, background-image 0.6s ease;
+    backface-visibility: hidden;
+}
+.front{
+    position: absolute;
+    display: grid;
+    width: 124.6%;
+    height: 530px;
+    justify-content: center;
+    left: -20px;
+    top: -20px;
+    align-items: center;
+    background-image:url(/Images/frontOfPolaroid.png);
+    background-size: cover;
+    background-position: center;
+    transform: rotateY(0deg);
+    box-shadow: 0px 4px 8px rgba(62, 60, 57, 0.6);
+}
+.front img{
+    border: 7px solid #E0E0E0;
+    position: relative;
+    top: 0px;
+    left: 16px;
+    width: 90%;
+}
+.front h2{
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+
+
+.back{
+    transform: rotateX(80deg);
+    position: absolute;
+    display: grid;
+    width: 100%;
+    height: 430px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/Images/backOfPolaroid.png);
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    margin: 10px;
+    top: -32px;
+    left: -30px;
+    box-shadow: 0px 4px 8px rgba(62, 60, 57, 0.6);
+    transform: rotateY(180deg);
+}
+.back p {
+    height: 200px;
+    position: relative;
+    top: 150px;
+    width: 100%;
+}
+
+
+.source-btns{ 
+    font-weight: bold;
+    position: relative;
+    top: 130px;
+    left: -30px;
+    text-decoration: none;
+}
+.source-btns a{
+    margin: 20px;
+    font-size: 3rem;
+    color: #7a1717;
+}
+
+
+.project-cards:hover .front{
+    transform: rotateY(-180deg);
+}
+.project-cards:hover .back{
+    transform: rotateY(0deg);
+}
+
 
 @media (min-width: 768px) {
     #mobile{

@@ -26,7 +26,7 @@ export default function Home() {
                         </p>
                     <div className='quick-contact'>
                         <a href='/David_Villarreal.pdf' download='David_Villarreal.pdf' class='download-btn'>
-                            <button>
+                            <button id='desktop'>
                                 <i class='fas fa-download'></i> Download My Resume
                             </button>
                         </a>    
@@ -50,69 +50,83 @@ export default function Home() {
             
             <section className='portfolio-preview'>
                 <div className='project-container'>
-                    
+                    <div className='backend'>
                         <h1>Backend Projects</h1>
-                        need to get images for these projects
-                    {/* <div className='backend'>
-                            <div className='item-1'>
-                        <div className="project-cards">
-                                <img src='../../Images/employee-monitoring.png'></img>
-                                <h2>Employee Tracker</h2>
-                        </div>
-                            </div>
-                           
-                        
-                        <div className='item-2'>
-                            <div className="project-cards">
-                                    <img src='../../Images/ecommerce.jpg'></img>
-                                    <h2>E-commerce Back-End</h2> */}
-                            {/* <h2>A backend project that manages products and categories using Sequilize ORM and PostgreSQL.</h2> */}
-                            {/* <a href='https://github.com/davidVillarreal03/E-commerce-Back-End' className='card-button'><i class="fa-brands fa-github"></i></a> */}
-                            {/* </div>
-                        </div>
-                    </div> */}
+                        <p>need to get images for these projects</p>
+                    </div>
                     
                         <h1>Frontend Projects</h1>
                     <div className='frontend'>
                         <div className="project-cards">
-                            <img src='../../Images/challenge-4.jpg'></img>
-                            <h2>Personal Blog</h2>
-                            {/* <p>This will allow users to create their own blog and share their thoughts with others.</p>
-                            <a href="https://davidvillarreal03.github.io/Personal-Blog/" className="card-button"><i className='fas fa-cube'></i></a>
-                            <a href="https://github.com/davidVillarreal03/Personal-Blog" className='card-button'><i class="fa-brands fa-github"></i></a> */}
+                            <div className='content front'>
+                                <img src='../../Images/challenge-4.jpg'></img>
+                                <h2>Personal Blog</h2>
+                            </div>
+                            <div className='content back'>
+                                    <p>This will allow users to create their own blog and share their thoughts with others.</p>
+                                <div className='source-btns'>
+                                    <a href="https://davidvillarreal03.github.io/Personal-Blog/" className="card-button"><i className='fas fa-cube'></i></a>
+                                    <a href="https://github.com/davidVillarreal03/Personal-Blog" className='card-button'><i class="fa-brands fa-github"></i></a>
+                                </div>
+                            </div>
                         </div>
                         
                         <div className="project-cards">
-                            <img src='../../Images/note.jpg'></img>
-                            <h2>Note Taker</h2>
-                            {/* <p>This application allows users to write, save, and delete notes.</p>
-                            <a href="https://notetaker-express-2.onrender.com/" className="card-button"><i className='fas fa-cube'></i></a>
-                            <a href="https://github.com/davidVillarreal03/NoteTaker-Express" className='card-button'><i class="fa-brands fa-github"></i></a> */}
+                            <div className='content front'>
+                                <img src='../../Images/note.jpg'></img>
+                                <h2>Note Taker</h2>
+                            </div>
+                            <div className='content back'>
+                                    <p>This application allows users to write, save, and delete notes.</p>
+                                <div className='source-btns'>
+                                    <a href="https://notetaker-express-2.onrender.com/" className="card-button"><i className='fas fa-cube'></i></a>
+                                    <a href="https://github.com/davidVillarreal03/NoteTaker-Express" className='card-button'><i class="fa-brands fa-github"></i></a>
+                                </div>
+                            </div>
                         </div>
                         
                         <div className="project-cards">
-                            <img src='../../Images/weather.jpg'></img>
-                            <h2>Weather Dashboard</h2>
-                            {/* <p>This application allows users to search for the weather in any city using a third-party API.</p>
-                            <a href="https://davidvillarreal03.github.io/Weather-DashBoard/" className="card-button"><i className='fas fa-cube'></i></a>
-                            <a href="https://github.com/davidVillarreal03/Weather-DashBoard" className='card-button'><i class="fa-brands fa-github"></i></a> */}
+                            <div className='content front'>
+                                <img src='../../Images/weather.jpg'></img>
+                                <h2>Weather Dashboard</h2>
+                            </div>
+                            <div className='content back'>
+                                    <p>This application allows users to search for the weather in any city using a third-party API.</p>
+                                <div className='source-btns'>
+                                    <a href="https://davidvillarreal03.github.io/Weather-DashBoard/" className="card-button"><i className='fas fa-cube'></i></a>
+                                    <a href="https://github.com/davidVillarreal03/Weather-DashBoard" className='card-button'><i class="fa-brands fa-github"></i></a>
+                                </div>
+                            </div>
                         </div>
                         <div className="project-cards">
+                            <div className='content front'>
                             <img src='../../Images/rush.png'></img>
                             <h2>Rush Response Towing</h2>
-                            {/* <p>This is a frontend application that allows users to get information about Rush Response.</p>
-                            <a href="https://rushresponse.netlify.app/" className="card-button"><i className='fas fa-cube'></i></a>
-                            <a href="https://github.com/davidVillarreal03/rushResponse" className='card-button'><i class="fa-brands fa-github"></i></a> */}
+                            </div>
+                            <div className='content back'>
+                                    <p>This is a frontend application that allows users to get information about Rush Response.</p>
+                                <div className='source-btns'>
+                                    <a href="https://rushresponse.netlify.app/" className="card-button"><i className='fas fa-cube'></i></a>
+                                    <a href="https://github.com/davidVillarreal03/rushResponse" className='card-button'><i class="fa-brands fa-github"></i></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     
                         <h1>Fullstack Projects</h1>
                     <div className='fullstack'>
                         <div className="project-cards">
-                            <img src='../../Images/itinerai.jpg'></img>
-                            <h2>ItinerAI</h2>
-                            {/* <p>This is a fullstack application that allows users to generate itineraries for a date.</p>
-                            <a href="https://itinerai.onrender.com/" className="card-button"><i className='fas fa-cube'></i></a> */}
+                            <div className='content front'>
+                                <img src='../../Images/itinerai.jpg'></img>
+                                <h2>ItinerAI</h2>
+                            </div>
+                            <div className='content back'>
+                                <p>This is a fullstack application that allows users to generate itineraries for a date.</p>
+                                <div className='source-btns'>
+                                    <a href="https://itinerai.onrender.com/" className="card-button"><i className='fas fa-cube'></i></a>
+                                    <a href="https://github.com/davidVillarreal03/ItinerAI" className='card-button'><i class="fa-brands fa-github"></i></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
