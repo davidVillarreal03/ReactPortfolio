@@ -125,13 +125,13 @@
     /* text-align: right; */
     text-decoration: none;
     color: #e8e8e6;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease;
 }
 .contacts a:hover{
     padding: 0;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     color: maroon;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease;
 }
 
 

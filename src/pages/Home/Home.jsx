@@ -50,8 +50,8 @@ export default function Home() {
             
             <section className='portfolio-preview'>
                 <div className='project-container'>
-                    <div className='backend'>
                         <h1>Backend Projects</h1>
+                    <div className='backend'>
                         <p>need to get images for these projects</p>
                     </div>
                     
