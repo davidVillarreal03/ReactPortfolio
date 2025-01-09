@@ -1,0 +1,120 @@
+@font-face{
+    font-family: 'oldtype';
+    src: url('../../../fonts/Old\ Typewriter2.0.ttf') format('opentype');
+}
+
+.home-page{
+    position: relative;
+    top: 0;
+    left: 0px;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #b0b1b4;  
+    margin-left: 240px;
+}
+
+.content-preview{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.aboutme{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    width: 90%;
+}
+.aboutme h1{
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: left;
+    color: #e8e8e6;
+}
+.aboutme h3{
+    font-size: 1.5rem;
+    text-align: left;
+    margin: 0;
+    color: #3A3A3A;
+}
+.aboutme p{
+    font-size: 1rem;
+    text-align: left;
+}
+
+.aboutme button{
+    border-radius: 0px;
+    margin-top: 10px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-right: 10px;
+    text-decoration: underline;
+    background-color: #4e5c6a;
+    color: #e8e8e6;
+}
+
+.aboutme button:hover{
+    background-color: #6d7055;
+}
+
+
+.mia{
+    width: 20%;
+}
+.mia img{
+    width: 100%;
+}
+
+.intro-card{
+    background-color: #d2c8b3;
+    border-radius: 10px;
+    padding: 30px 20px;
+    color: #3A3A3A;
+    width: 80%;
+}
+
+.intro-card h1, p, h3{
+    color: #3A3A3A;
+}
+
+
+@media (min-width: 769px) {
+    #mobile{
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .home-page{
+        position: static;
+        top: 0;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+    }
+    #desktop{
+        display: none;
+    }
+    .aboutme{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .mia{
+        order: 1;
+    }
+    .intro-card{
+        order: 2;
+    }
+}
