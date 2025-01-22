@@ -74,7 +74,7 @@
     width: 100%;
 }
 
-.intro-card{
+.content-card{
     background-color: #d2c8b3;
     border-radius: 10px;
     padding: 30px 20px;
@@ -82,11 +82,177 @@
     width: 80%;
 }
 
-.intro-card h1, p, h3{
+.content-card h1, p, h3{
     color: #3A3A3A;
 }
 
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10%;
+    text-align: center;
+    /* align-items: center; */
+    width: 80%;
+}
+.contact-form label{
+    color: black;
+    font-weight: bolder;
+}
+.contact{
+    /* display: flex; */
+    width: 50%
+}
+.contact-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4%;
+}
+.contact-text ul{
+    list-style-type: none;
+    display: inline-flex;
+    margin: 0;
+}
+.contact-text ul li{
+    padding: 0 10px;
+}
+.contact-text ul li a{
+    text-decoration: none;
+    color: #3A3A3A;
+}
+.contact-text i{
+    font-size: 1.5rem;
+    color: #e8e8e6;
+}
+.contact-text p{
+    font-size: .9rem;
+}
+.contact-text button{
+    border-radius: 10px;
+    /* margin: 5px; */
+    padding: 10px;
+    background-color: #4a3c3c; /* Muted dark brown with a worn feel */
+    color: #d3c6c6; /* Faded white, slightly dusty */
+    border: 2px solid #7b1e1e; /* Blood-stain inspired border */
+    border-radius: 50%; /* Circular buttons */
+    font-size: 1.5rem; /* Icon size */
+    transition: all 0.4s ease; /* Smooth transition for hover effects */
+    text-decoration: none; /* No underline */
+    position: relative; /* For overlay effects */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Subtle worn-out shadow */
+}
+.contact-text button:hover {
+    background-color: #7b1e1e; /* Dark red hover effect */
+    color: #e4dcdc; /* Light faded color for contrast */
+    border-color: #d3c6c6; /* Inverse border for emphasis */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6); /* Intensified shadow */
+    transform: translateY(-4px); /* Slight lift on hover */
+}
+.contact-text button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+        circle,
+        rgba(0, 0, 0, 0.1) 0%,
+        rgba(255, 255, 255, 0) 60%
+    );
+    mix-blend-mode: overlay; /* Worn-out texture blending */
+    pointer-events: none; /* Ensure it's not interactive */
+    border-radius: 50%;
+}
 
+.contact-text button:hover::after {
+    background: radial-gradient(
+        circle,
+        rgba(123, 30, 30, 0.4) 0%,
+        rgba(255, 255, 255, 0) 60%
+    ); /* Faint bloody glow */
+}
+.contact-form {
+    max-width: 800px; /* Increased width from 600px to 800px */
+    margin: 0 auto;
+    padding: 15px;
+    background: #3c3333; /* Muted, worn dark gray */
+    color: #d3c6c6; /* Faded off-white */
+    border: 1px solid #7b1e1e; /* Subtle blood-red border */
+    border-radius: 8px; /* Rounded edges */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Deep shadow for a moody look */
+    background-image: radial-gradient(
+        circle,
+        rgba(255, 255, 255, 0.05) 0%,
+        rgba(0, 0, 0, 0.2) 100%
+    ); /* Subtle texture effect */
+}
+
+/* Heading */
+.contact-form h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    color: #d3c6c6;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Worn-out shadow */
+}
+
+/* Form Labels */
+.contact-form label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #e4dcdc; /* Slightly lighter than text for contrast */
+}
+
+/* Input and Textarea */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    /* padding: 10px; */
+    margin-bottom: 20px;
+    background-color: #4a3c3c; /* Dark worn background */
+    border: 1px solid #7b1e1e; /* Blood-red border */
+    color: #d3c6c6;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: 'Arial', sans-serif;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5); /* Inner shadow for depth */
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #e4dcdc; /* Faded white border on focus */
+    background-color: #3c3333; /* Darker background */
+    outline: none;
+}
+
+/* Button */
+.contact-form button {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #3c3333; /* Dark text */
+    background-color: #7b1e1e; /* Blood-red background */
+    border: 1px solid #e4dcdc; /* Faded white border */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Subtle worn-out shadow */
+}
+
+.contact-form button:hover {
+    background-color: #a12323; /* Brighter blood-red */
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Shadow on hover */
+}
+
+/* Optional: Add Grunge Overlay */
 @media (min-width: 769px) {
     #mobile{
         display: none;
