@@ -5,7 +5,7 @@ export default function Home() {
         <div className='home-page'>
             <section className='content-preview'>
                 <div className='aboutme'>
-                    <div className='intro-card'>
+                    <div className='content-card'>
                         <h3>Web Developer</h3>
                         <h1 id='desktop'>Hello World,
                             I am David Villarreal</h1>
@@ -55,8 +55,60 @@ export default function Home() {
 
             </section>
             
-            <section className='contact-preview'>
+            <section className='content-preview'>
+                        {/* <section>
+                            
+                        </section> */}
+                <div className='contact'>
+                    <div className='content-card'>
+                            <div className='contact-container'>
+                            <div className='contact-text'>
+                                <h3>Lets Connect!</h3>
+                                <h4>Contacts & Socials:</h4>
+                                <ul>
+                                    <a href='https://www.linkedin.com/in/david-villarreal-219214337/'>
+                                        <button>
+                                            <li><i class="fa-brands fa-linkedin"></i></li>
+                                        </button>
+                                    </a>
+                                    <a href='https://github.com/davidVillarreal03'>
+                                        <button>
+                                            <li><i class="fa-brands fa-github"></i></li>
+                                        </button>
+                                    </a>
+                                    <a href='https://stackoverflow.com/users/27916696/david-villarreal'>
+                                        <button><li><i class="fa-brands fa-stack-overflow"></i></li></button>
+                                    </a>
+                                    <a href='mailto:davidvillarr3al@gmail.com'>
+                                        <button><li><i class='fa-solid fa-envelope'></i></li></button>
+                                    </a>
+                                </ul>
+                                {/* <p>I would love to hear from you! I am always open to new opportunities whether it be a job or a project, so don't hesitate to reach out even if it has to do with a question about my work. Helping others is what drives me and it would mean the world to me if I was someone who you can count on to help. Please fill out the form below and I will get back to you as soon as possible.</p> */}
+                            </div>
 
+                            <form action="https://formsubmit.co/davidvillarr3al@gmail.com" method="POST"className="contact-form" data-aos="fade-down">
+                                {/* <h3>Contact Me Directly</h3> */}
+                                <input type="hidden" name="_subject" value="New Contact Form Submission"></input>
+                                <input type="hidden" name="_next" value="https://davidvillarreal.netlify.app/thankyou"></input>
+                                
+                                <label for="name">Name:</label>
+                                <input type='text' id='name' name="name" placeholder='Your full name' required></input>
+
+                                <label for="email">Email:</label>
+                                <input type='email' id='email' name="email" placeholder='Email' required></input>
+                                
+                                <label for="phone">Phone:</label>
+                                <input type='tel' id='phone' name="phone" placeholder='(xxx) xxx-xxxx' required></input>
+
+                                <label for="message">Message:</label>
+                                <textarea type='text' id='message' name="message" rows='5' placeholder='Type your message here...' required></textarea>
+                            
+                                <button type='submit' value="Submit">Send Message:</button>
+                            </form>
+                            </div>
+
+                        </div>
+                </div>
             </section>
             
             <section className='pricing-preview'>
