@@ -1,12 +1,18 @@
 import './newHome.css'
+import { useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 // import './David_Villarreal.pdf'
 export default function Home() {
+    useEffect(() => {
+        AOS.init();
+    }, [])
     return (
         <div className='home-page'>
             <section className='content-preview'>
                 <div className='aboutme'>
-                    <div className='content-card'>
-                        <h3>Web Developer</h3>
+                    <div className='content-card' data-aos="fade-right">
+                        <h3>Web Developer</h3>                        
                         <h1 id='desktop'>Hello World,
                             I am David Villarreal</h1>
                         <h1 id='mobile'>David Villarreal</h1>
@@ -44,7 +50,7 @@ export default function Home() {
                             </a>
                         </div>
                     </div>
-                    <div className='mia'>
+                    <div className='mia' data-aos="fade-left">
                         <img src='/Images/mia.png'></img>
                     </div>
                 </div>
@@ -55,16 +61,79 @@ export default function Home() {
 
             </section>
             
+
             <section className='content-preview'>
-                        {/* <section>
-                            
-                        </section> */}
-                <div className='contact'>
-                    <div className='content-card'>
+                
+                <div className='content-card' data-aos="fade-right">
+                    <h1>Skills</h1>
+                    <h3>What I Do</h3>
+                    <div className='services'>
+                        <div className='service'>
+                            <i class="fa-solid fa-desktop"><p>Web Design</p></i>
+                        </div>
+                        <div className='service'>
+                            <i class='fa-solid fa-computer'><p>Web Application Development</p></i>
+                        </div>
+                        <div className='service'>
+                            <i class='fa-solid fa-code'><p>Full-Stack Development</p></i>
+                        </div>
+                        {/* <div className='service'>
+                            <i class='fa-solid fa-palette'><p>UI/UX Design</p></i>
+                        </div> */}
+                        <div className='service'>
+                            <i class='fa-solid fa-cart-shopping'><p>E-commerce (Integrated with <a href='https://stripe.com/'>Stripe</a>)</p></i>
+                        </div>
+                        <div className='service'>
+                            <i class='fa-solid fa-database'><p>Databases</p></i>
+                        </div>
+                        </div>
+                <h3>Proficiencies</h3>
+                <div className='my-skills'>
+                        <div className='skill'>
+                            <i class="fa-brands fa-html5"><p>HTML</p></i>
+                        </div>
+                        <div className='skill'>
+                            <i class="fa-brands fa-css3-alt"><p>CSS</p></i>
+                        </div>
+                        <div className='skill'>
+                            <i class="fa-brands fa-js"><p>JavaScript</p></i>
+                        </div>
+                        <div className='skill'>
+                            <i class="fa-brands fa-react"><p>React</p></i>
+                        </div>
+                        <div className='skill'>
+                            <i class="fa-brands fa-node-js"><p>Node.js</p></i>
+                        </div>
+                        <div className='skill'>
+                            <i class="fa-brands fa-git-alt"><p>Git</p></i>
+                        </div>
+                        <div className='skill'>
+                            <i class="fa-brands fa-github"><p>GitHub</p></i>
+                        </div>
+                        <div className='skill'>
+                            <i class="fa-brands fa-npm"><p>npm</p></i>
+                        </div>
+                        {/* <div className='skill'>
+                            <i class="fa-brands fa-bootstrap"><p>Bootstrap</p></i>
+                        </div> */}
+                        <div className='skill'>
+                            <i class='fa-solid fa-database'><p>MongoDB</p></i>
+                        </div>
+                        <div className='skill'>
+                            <i class='fa-solid fa-database'><p>SQL</p></i>
+                        </div>
+                        <div className='skill'>
+                            <i class='fa-solid fa-download'><p>PWAs</p></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div className='contact' data-aos="fade-up">
+                    <div className='content-card' id='contact'>
                             <div className='contact-container'>
                             <div className='contact-text'>
                                 <h3>Lets Connect!</h3>
-                                <h4>Contacts & Socials:</h4>
+                                <h1>Contacts & Socials:</h1>
                                 <ul>
                                     <a href='https://www.linkedin.com/in/david-villarreal-219214337/'>
                                         <button>
@@ -83,14 +152,13 @@ export default function Home() {
                                         <button><li><i class='fa-solid fa-envelope'></i></li></button>
                                     </a>
                                 </ul>
-                                {/* <p>I would love to hear from you! I am always open to new opportunities whether it be a job or a project, so don't hesitate to reach out even if it has to do with a question about my work. Helping others is what drives me and it would mean the world to me if I was someone who you can count on to help. Please fill out the form below and I will get back to you as soon as possible.</p> */}
                             </div>
 
                             <form action="https://formsubmit.co/davidvillarr3al@gmail.com" method="POST"className="contact-form" data-aos="fade-down">
-                                {/* <h3>Contact Me Directly</h3> */}
                                 <input type="hidden" name="_subject" value="New Contact Form Submission"></input>
                                 <input type="hidden" name="_next" value="https://davidvillarreal.netlify.app/thankyou"></input>
-                                
+                                <input type="hidden" name="_template" value="table"></input>
+
                                 <label for="name">Name:</label>
                                 <input type='text' id='name' name="name" placeholder='Your full name' required></input>
 
@@ -104,6 +172,7 @@ export default function Home() {
                                 <textarea type='text' id='message' name="message" rows='5' placeholder='Type your message here...' required></textarea>
                             
                                 <button type='submit' value="Submit">Send Message:</button>
+                            <p className='note'>This form will send a message straight to my email.</p>
                             </form>
                             </div>
 
@@ -111,8 +180,49 @@ export default function Home() {
                 </div>
             </section>
             
-            <section className='pricing-preview'>
+            <section className='content-preview'>
+                <div className='content-card'>
+                    <h1>favorite Projects</h1>
+                    <div className='polaroids'>
+                        {/* <div className='front'> */}
+                            <div className='polaroid'>
+                                <img src='../../Images/itinerai.png'></img>
+                                <br></br>
+                                <br></br>
+                                <h3>ItinerAI</h3>
+                                <i class="fa-solid fa-arrow-right"></i>
 
+                            </div>
+                            <div className='polaroid'>
+                                <img src='../../Images/rush.png'></img>
+                                <br></br>
+                                <br></br>
+                                <h3>Rush Response</h3>
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </div>
+                            <div className='polaroid'>
+                                <img src='../../Images/e-commerce.png'></img>
+                                <br></br>
+                                <br></br>
+                                <h3>E-Commerce Back-End</h3>
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </div>
+                        {/* </div> */}
+                        <div className='back'>
+                            {/* <div className='polaroid'>
+                                <img src='../../Images/itinerai.png'></img>
+                            </div>
+                            <div className='polaroid'>
+                                <img src='../../Images/rush.png'></img>
+                            </div>
+                            <div className='polaroid'>
+                                <img src='../../Images/e-commerce.png'></img>
+                            </div> */}
+                        </div>
+                    </div>
+                </div>
             </section>
             
         </div>
