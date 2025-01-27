@@ -180,20 +180,65 @@ export default function Home() {
                 </div>
             </section>
             
-            <section className='content-preview'>
+            <section className='content-preview' data-aos='zoom-in'>
                 <div className='content-card'>
                     <h1>favorite Projects</h1>
                     <div className='polaroids'>
-                        {/* <div className='front'> */}
+                        <div className='polaroid-container'>
                             <div className='polaroid'>
-                                <img src='../../Images/itinerai.png'></img>
-                                <br></br>
-                                <br></br>
-                                <h3>ItinerAI</h3>
-                                <i class="fa-solid fa-arrow-right"></i>
-
+                                <div className='front'>
+                                    <img src='../../Images/itinerai.png'></img>
+                                    <h3>ItinerAI</h3>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </div>
+                                <div className='back'>
+                                    <a href='https://itinerai.onrender.com/'>
+                                        <i class='fa-solid fa-globe'>
+                                        </i>
+                                    </a> 
+                                    <p>ItinerAI is an application that makes planning a special day easy and quick.</p>
+                                </div>
                             </div>
+                        </div>
+                        <div className='polaroid-container'>
                             <div className='polaroid'>
+                                <div className='front'>
+                                    <img src='../../Images/e-commerce.png'></img>
+                                    <h3>E-commerce</h3>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </div>
+                                <div className='back'>
+                                    <div className='sources'>
+                                        <a href='https://youtu.be/x8zlpm7RXys?si=s3pSe_tX8YT1aQYO'>
+                                            <i class='fa-brands fa-youtube'></i></a>
+                                        <a href='https://github.com/davidVillarreal03/E-commerce-Back-End.git'>
+                                            <i class='fa-brands fa-github'></i></a> 
+                                    </div>
+                                    <p>This project simulates the back-end of an e-commerce website.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='polaroid-container'>
+                            <div className='polaroid'>
+                                <div className='front'>
+                                    <img src='../../Images/rush.png'></img>
+                                    <h3>Rush Response</h3>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </div>
+                                <div className='back'>
+                                    <div className='sources'>
+                                        <a href='https://rushresponse.netlify.app/'>
+                                            <i class='fa-solid fa-globe'>
+                                            </i>
+                                        </a> 
+                                        <a href='https://github.com/davidVillarreal03/rushResponse.git'>
+                                            <i class='fa-brands fa-github'></i></a>
+                                    </div>
+                                    <p>Rush Response allows a client to schedule a tow service.</p>
+                                </div>
+                            </div>
+                        </div>
+                            {/* <div className='polaroid' data-aos='flip-left'>
                                 <img src='../../Images/rush.png'></img>
                                 <br></br>
                                 <br></br>
@@ -201,25 +246,17 @@ export default function Home() {
                                 <i class="fa-solid fa-arrow-right"></i>
 
                             </div>
-                            <div className='polaroid'>
+                            <div className='polaroid' data-aos='flip-left'>
                                 <img src='../../Images/e-commerce.png'></img>
                                 <br></br>
                                 <br></br>
                                 <h3>E-Commerce Back-End</h3>
                                 <i class="fa-solid fa-arrow-right"></i>
 
-                            </div>
+                            </div> */}
                         {/* </div> */}
                         <div className='back'>
-                            {/* <div className='polaroid'>
-                                <img src='../../Images/itinerai.png'></img>
-                            </div>
-                            <div className='polaroid'>
-                                <img src='../../Images/rush.png'></img>
-                            </div>
-                            <div className='polaroid'>
-                                <img src='../../Images/e-commerce.png'></img>
-                            </div> */}
+                            
                         </div>
                     </div>
                 </div>

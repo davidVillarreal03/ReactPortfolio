@@ -28,6 +28,8 @@
 
 .aboutme{
     display: flex;
+    order: 2;
+    /* flex: 2; */
     justify-content: start;
     align-items: start;
     width: 90%;
@@ -68,7 +70,9 @@
 
 
 .mia{
+    order: 1;
     width: 20%;
+    /* flex: 1; */
 }
 .mia img{
     width: 100%;
@@ -312,42 +316,103 @@
 .skill p{
     color: #d3c6c6;
 }
-.front{
-    display: flex;
-    flex-wrap: wrap;
-    width: 40%;
-}
 .polaroids{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
-.polaroid{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    margin: 10px;
-    padding: 15px;
+.polaroid-container{
+    perspective: 1000px;
     width: 35%;
-    background-image: url('../../../public/images/frontOfPolaroid.png');
-    background-size: cover;
-    background-repeat: no-repeat;
+    margin: 20px auto;
+}
+.polaroid{
+    position: relative;
+    width: 100%;
+    min-height: 350px;
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease-in-out;
 }
 .polaroid h3{
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-    /* color: #; */
     font-family: 'oldtype';
 }
-.polaroid img{
-    width: 100%;
+.polaroid .front, .polaroid .back{
+    position: absolute;
+    width: 99%;
+    height: 108%;
+    backface-visibility: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
 }
-.polaroid i{
+.polaroid .front{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: rotateY(0deg);
+    align-items: center;
+    background: url('/Images/frontOfPolaroid.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease-in-out;
+}
+.polaroid .front img{
+    width: 85%;
+    height: 55%;
+}
+.polaroid .front i{
     position: relative;
-    top: 0;
-    font-size: 1.4rem;
-    left: 40%;
+    top: 5%;
+    left: 35%;
+    font-size: 1.5rem;
+    color: #d3c6c6;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+.polaroid .back{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(-180deg);
+    color: #d3c6c6;
+    font-family: 'oldtype';
+    font-size: 1rem;
+    padding: 10px;
+    text-align: center;
+    background: url('/Images/backOfPolaroid.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease-in-out;
+}
+.polaroid .back a{
+    margin: 5px;
+    color: maroon;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+
+}
+.polaroid .back a:hover{
+    color: #f0e6e6; /* Faded white */
+    text-shadow: 0 0 8px #d1b3b3, 0 0 15px #b30000;
+
+}
+.polaroid .back p{
+    font-family: 'oldtype';
+    font-size: .9rem;
+    text-align: center;
+    /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); */
+}
+.polaroid-container:hover .polaroid .front{
+    transform: rotateY(180deg);
+}
+.polaroid-container:hover .polaroid .back{
+    transform: rotateY(0deg);
+}
+.sources{
+    display: inline-flex;
 }
 @media (min-width: 769px) {
     #mobile{
