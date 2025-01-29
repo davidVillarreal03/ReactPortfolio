@@ -24,7 +24,7 @@ const SlideInNavBar = () => {
             <img className='headshot'src='../../Images/head.jpg'></img>
             <h1>David Villarreal</h1>
             <h2>Web Developer</h2>
-            <div className='contact-container'>
+            <div className='contacts-container'>
                 <div className='contacts'>
                     <a href="mailto:davidvillarr3al@gmail.com">
                             <i class="fa-solid fa-envelope"></i>
