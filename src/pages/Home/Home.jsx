@@ -196,7 +196,7 @@ export default function Home() {
                                         <i class='fa-solid fa-globe'>
                                         </i>
                                     </a> 
-                                    <p>ItinerAI is an application that makes planning a special day easy and quick.</p>
+                                    <p>ItinerAI makes planning a special day easy and quick.</p>
                                 </div>
                             </div>
                         </div>
@@ -214,7 +214,7 @@ export default function Home() {
                                         <a href='https://github.com/davidVillarreal03/E-commerce-Back-End.git'>
                                             <i class='fa-brands fa-github'></i></a> 
                                     </div>
-                                    <p>This project simulates the back-end of an e-commerce website.</p>
+                                    <p>Simulates the back-end of an e-commerce website.</p>
                                 </div>
                             </div>
                         </div>

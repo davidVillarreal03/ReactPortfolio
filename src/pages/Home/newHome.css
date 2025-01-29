@@ -358,7 +358,7 @@
     transition: transform 0.8s ease-in-out;
 }
 .polaroid .front img{
-    width: 85%;
+    width: 95%;
     height: 55%;
 }
 .polaroid .front i{
@@ -420,6 +420,62 @@
     }
 }
 @media (max-width: 768px) {
+    .mia{
+        width: 60%;
+    }
+    .service{
+        width: 35%;
+    }
+    .services{
+        font-size: .95rem;
+        width: 100%;
+    }
+    .my-skills{
+        width: 100%;
+    }
+    #contact{
+        margin-top: 20px;
+        width: 100%;
+        margin-left: 0;
+        padding: 0;
+    }
+    .contact{
+        width: 100%;
+    }
+    .contact-form{
+        width: 70%;
+    }
+    .contact-container{
+        padding-bottom: 10px;
+    }
+    .polaroid-container{
+        width: 100%;
+    }
+    .polaroid{
+        min-height: 300px;
+    }
+    .polaroid .front img{
+        width: 80%;
+        height: 50%;
+    }
+    .polaroid .front i{
+        font-size: 1.2rem;
+    }
+    .polaroid .back{
+        width: 92%;
+        height: 90%;
+        font-size: .8rem;
+    }
+    .polaroid .back a{
+        font-size: 1.2rem;
+    }
+    .polaroid .back p{
+        font-size: .8rem;
+    }
+    .quick-contact{
+        width: 100%;
+    }
+    
     .home-page{
         position: static;
         width: 100%;
