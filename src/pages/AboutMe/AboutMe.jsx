@@ -18,7 +18,7 @@ export default function AboutMe () {
                         applications that will make the web a better place for all.
                     </p>
                     <p className='note'>
-                        *A little fun fact the color scheme for this portfolio was inspired by Silent Hill 2.*
+                        *Fun Fact: The color scheme for this portfolio was inspired by Silent Hill 2.*
                     </p>
                 </section>
 

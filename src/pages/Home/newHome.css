@@ -420,7 +420,7 @@
     }
 }
 @media (max-width: 768px) {
-    .contact-form input{
+    .contact-form input, textarea{
         width: 95%;
     }
     .mia{
