@@ -3,7 +3,6 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-top: 10%;
     text-align: center;
 }
 
@@ -26,23 +25,136 @@
     font-style: italic;
     color: #ccc;
 }
-/* .aboutme-page p{
+
+.subscriptions{
+    /* display: flex; */
+    background-color: #5b6651;
+    border: 5px solid #3a3b3c;
+    border-radius: 39px;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 10px;
+    color: #e4e1d4;
+    font-weight: bolder;
+    width: 70%;
+}
+.subscription-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.subscription-card{
+    display: flex;
+    width: 35%;
+    padding: 20px;
+    margin: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background-color: #3a3a3a;
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 
 }
-
-.aboutme-page img{
-
-} */
-
+.subscription-card ul li{
+    margin: 2px;
+    color: #e4e1d4;
+    font-size: 14px;
+    text-align: left;
+}
+.subscription-card p{
+    color: #e4e1d4;
+    font-size: .7rem;
+    font-weight: bolder;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+.subscription-card button{
+    background-color: #8b0000;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    color: #e4e1d4;
+    font-size: .7rem;
+    font-weight: bolder;
+}
+ .subscription-card h2{
+    color: #e4e1d4;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0;
+ }
+ .subscription-card h3{
+    color: green;
+    font-size: 1.9rem;
+    font-weight: bolder;
+    font-style: italic;
+    margin: 0px;
+ }
+ .subscription-card span{
+    color: #e4e1d4;
+    font-size: .8rem;
+    font-weight: bold;
+    font-style: italic;
+ }
+ .subscription-card span button{
+    position: relative;
+    left: 60%;
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-top: 20px;
+ }
+ #gold{
+    color: gold;
+ }
+ #platinum{
+    color: Silver;
+ }
 @media (max-width: 768px) {
     .aboutme-section{
-        width: 70%;
+        width: 80%;
         padding: 0;
         margin: 0;
+        margin-top: 10%;
     }
     .aboutme-section p{
         padding: 15px;
         font-size: 12px;
         font-weight: bolder;
-    };
+    }
+    .subscriptions{
+        width: 80%;
+    }
+    .subscription-cards{
+        flex-direction: column;
+    }
+    .subscriptions p{
+        font-size: 12px;
+    }
+    .subscription-cards p, .subscription-cards ul li{
+        font-size: 10px;
+    }
+    .subscription-cards h2{
+        font-size: 1.3rem;
+    }
+    .subscription-cards h3{
+        font-size: 1.5rem;
+    }
+    .subscription-cards span{
+        font-size: 10px;
+    }
+    .subscription-cards span button{
+        font-size: 10px;
+    }
+    .subscription-card{
+        width: 80%;
+    }
 }   
