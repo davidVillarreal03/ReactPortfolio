@@ -165,7 +165,9 @@
         width: 100%;
     }
     #rush{
-        width: 100%;
+        width: 180%;
+        margin-bottom: 30%;
+        margin-left: -40%;
     }
     #ia{
         width: 100%;
