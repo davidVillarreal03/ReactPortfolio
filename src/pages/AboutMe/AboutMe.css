@@ -153,6 +153,23 @@
         font-size: 12px;
         font-weight: bolder;
     }
+    .clients{
+        width: 80%;
+    }
+    .client-logos{
+        /* flex-direction: column; */
+        align-items: center;
+        justify-content: center;
+    }
+    .client-logo{
+        width: 100%;
+    }
+    #rush{
+        width: 100%;
+    }
+    #ia{
+        width: 100%;
+    }
     .subscriptions{
         width: 80%;
     }
