@@ -2,15 +2,18 @@ import './Resume.css'
 export default function Resume() {
     return (
         <section className='page-layout'>
-            <h1>Resume</h1>
+             <a href='/David_Villarreal.pdf' download='David_Villarreal.pdf' class='download-btn'>
+                <h1>Resume</h1>
+            </a>
             <h5>1 Year of Experience in Full-Stack Development</h5>
             <hr></hr>
         <div className='resume-page'>
             <div className='resume-container'>
+                {/* <h1>Proficiencies</h1> */}
                 <ul className='resume-list'>
                 <h2>Education</h2>
                     <li className='resume-item'>
-                        <h4>2024</h4>
+                        <h4 id='first'>2024</h4>
                         <h3>The University of Texas at San Antonio School of Data Science</h3> 
                         <h5>Coding Boot Camp</h5>
                         <p>Completed an intensive, hands-on boot camp focused on modern web development.
@@ -33,11 +36,9 @@ export default function Resume() {
                         <br></br>
                         <hr></hr>
                     </li>
-                </ul>
-                <ul className='resume-list'>
                     <h2>Experience</h2>
                     <li className='resume-item'>
-                        <h4 id='string'>2024 - Current</h4>
+                        <h4 id='string' >2024 - Current</h4>
                         <h3>Front-End Developer at Rush Response Towing</h3>
                         <h5>San Antonio, Texas</h5>
                         <p>Developed and maintained responsive and user-friendly web applications using React, HTML, and CSS.
@@ -57,6 +58,34 @@ export default function Resume() {
                         <br></br>
                         <hr></hr>
                     </li>
+                </ul>
+                <ul className='resume-list'>
+                    <div className='proficiencies'>
+                    <h2>Design Skills</h2>
+                    <div className='coding-skills'>    
+                        <li>Web Design</li>
+                        <li>Logo Design</li>
+                    </div>
+                    <h2>Coding Skills</h2>
+                    <div className='coding-skills'>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Node.js</li>
+                        <li>Express</li>
+                        <li>MongoDB</li>
+                        <li>PostgreSQL</li>
+                    </div>
+                    <h2>Knowledges</h2>
+                    <div className='knowledge'>
+                        <li>Time Management</li>
+                        <li>Problem Solving</li>
+                        <li>Communication</li>
+                        <li>Leadership</li>
+                        <li>Teamwork</li>
+                    </div>
+                    </div>
                 </ul>
             </div>
         </div>
