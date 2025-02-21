@@ -47,8 +47,8 @@ const SlideInNavBar = () => {
         <ul>
             <li><Link to="/" onClick={closeSidebar}>Home <i class="fa-solid fa-house"></i></Link></li>
             <li><Link to="/About" onClick={closeSidebar}>About <i class="fas fa-question-circle"></i></Link></li>
-            <li><Link to="/Portfolio" onClick={closeSidebar}>Portfolio <i class="fas fa-code"></i></Link></li>
-            <li><Link to="/Contact" onClick={closeSidebar}>Contact <i class="fa-solid fa-paper-plane"></i></Link></li>
+            {/* <li><Link to="/Portfolio" onClick={closeSidebar}>Portfolio <i class="fas fa-code"></i></Link></li> */}
+            {/* <li><Link to="/Contact" onClick={closeSidebar}>Contact <i class="fa-solid fa-paper-plane"></i></Link></li> */}
             <li><Link to="/Resume" onClick={closeSidebar}>Resume <i class="fas fa-file-alt"></i></Link></li>
         </ul>
       </nav>
