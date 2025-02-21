@@ -1,11 +1,15 @@
 import './AboutMe.css';
-
-
+import AOS from 'aos';
+// import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 export default function AboutMe () {
+    useEffect(() => {
+        AOS.init();
+    })
     return (
         <div className='home-page'>
 
-                <section className='aboutme-section'>
+                <section className='aboutme-section' data-aos="fade-up">
                     <h2>About Me</h2>
                     <p>I am a junior web developer passionate about designing websites but mainly taking on the challenges that come with having to write logical applications. 
                     With 1 year of experience in full-stack development, I specialize in using Javascript language and React as the framework for my projects.</p>
@@ -28,15 +32,15 @@ export default function AboutMe () {
 
                     </div>
                 </section> */}
-                <section className='clients'>
+                <section className='clients' data-aos="fade-up">
                     <h2>Clients I have done work for</h2>
                     <div className='client-logos'>  
-                        <span className='client-logo'>
+                        <span className='client-logo' data-aos="fade-right">
                             <a href='https://rushresponse.netlify.app/'>
                                 <img id='rush' src='../../logos/altrush.svg'></img>
                             </a>
                         </span>
-                        <span className='client-logo'>
+                        <span className='client-logo' data-aos="fade-left">
                             <a href='https://itinerai.onrender.com/'>
                                 <img id='ia'src='../../logos/i.a.svg'></img>
                             </a>
@@ -49,7 +53,7 @@ export default function AboutMe () {
                     <p>Hover over the bullet points to learn more!</p>
                     {/* <p>Start with Silver and upgrade at anytime!</p> */}
                     <div className='subscription-cards'>
-                        <div className='subscription-card'>
+                        <div className='subscription-card' data-aos='fade-up'>
                             <h2>Silver</h2>
                             <h3>$30<span>/month</span> <button>Free Trial</button></h3>
                             {/* <button>Free Trial</button> */}
@@ -63,7 +67,7 @@ export default function AboutMe () {
                             <p>Perfect for start ups and small projects--get the essentials to build your online presence.</p>
                             <span><button>Subscribe Now</button></span>
                         </div>
-                        <div className='subscription-card'>
+                        <div className='subscription-card' data-aos='fade-up'>
                             <h2 id='gold'>Gold</h2>
                             <h3>$60<span>/month</span></h3>
                             {/* <button>Free Trial</button> */}
@@ -77,7 +81,7 @@ export default function AboutMe () {
                             <p>Take your website to the next level with custom development and expert support.</p>
                             <span><button>Subscribe Now</button></span>
                         </div>
-                        <div className='subscription-card'>
+                        <div className='subscription-card' data-aos='fade-up'>
                             <h2 id='platinum'>Platinum</h2>
                             <h3>$100<span>/month</span></h3>
                             {/* <button>Free Trial</button> */}
