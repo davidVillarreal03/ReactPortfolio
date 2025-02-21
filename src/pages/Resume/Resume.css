@@ -1,0 +1,54 @@
+.page-layout{
+    text-align: center;
+    margin-left: 15%;
+}
+.page-layout h1{
+    margin: 0;
+    padding-top: 3%;
+}
+
+.resume-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    text-align: center;
+}
+
+.resume-list{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    text-align: left;
+}
+
+.resume-list li{
+    list-style: none;
+    margin-bottom: 5%;
+}
+
+.resume-item h4{
+    text-align: center;
+    border: 3px solid #6b3e3e;
+    border-radius: 5px;
+    width: 10%;
+    padding: 2px;
+    color: #6b3e3e;
+}
+
+.resume-item h3{
+    color: #2b2b2b;
+}
+
+.resume-item h5{
+    color: #6b3e3e;
+}
+
+.resume-item p{
+    color: #2b2b2b;
+}
+
+#string{
+    width: 20%;
+}
