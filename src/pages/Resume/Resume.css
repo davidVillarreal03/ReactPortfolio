@@ -3,14 +3,19 @@
     margin-left: 15%;
 }
 .page-layout h1{
+    /* text-decoration: none; */
     margin: 0;
     padding-top: 3%;
 }
 .page-layout a{
+    text-decoration: none;
     color: #2b2b2b;
 }
 .page-layout a:hover{
     color: #6b3e3e;
+}
+.page-layout h2{
+    text-decoration: underline;
 }
 .resume-page{
     display: flex;
@@ -95,4 +100,40 @@
     margin: 5px;
     font-size: .8rem;
     border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .page-layout{
+        margin-left: 0;
+    }
+    .resume-container{
+        margin-left: 0;
+        flex-direction: column;
+    }
+    .resume-list{
+        text-align: center;
+        margin-left: -10%;
+        width: 100%;
+    }
+    .resume-item li{
+        text-align: center;
+    }
+    .resume-item p{
+        text-align: center;
+        width: 100%;
+        font-size: medium;
+    }
+    .coding-skills{
+        width: 100%;
+    }
+    .knowledge{
+        width: 100%;
+    }
+    .proficiencies{
+        margin-left: 0;
+    }
+    .coding-skills{
+        margin-left: 0;
+        text-align: center;
+    }
 }
