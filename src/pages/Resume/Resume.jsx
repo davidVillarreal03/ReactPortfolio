@@ -8,7 +8,7 @@ export default function Resume() {
             <h5>1 Year of Experience in Full-Stack Development</h5>
             <hr></hr>
         <div className='resume-page'>
-            <div className='resume-container'>
+            <div className='resume-container' id='desktop'>
                 {/* <h1>Proficiencies</h1> */}
                 <ul className='resume-list'>
                 <h2>Education</h2>

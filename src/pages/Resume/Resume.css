@@ -102,13 +102,36 @@
     border-radius: 5px;
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 760px){
+    .page-layout{
+        margin: 0;
+    }
+    .resume-page{
+    }
+    .resume-container{
+        flex-direction: column;
+    }
+    .resume-list{
+        width: 100%;
+        text-align: center;
+    }
+    .resume-list ul{
+        margin: 0;
+        padding: 0;
+    }
+}
+/* @media (max-width: 768px) {
     .page-layout{
         margin-left: 0;
     }
     .resume-container{
         margin-left: 0;
         flex-direction: column;
+    }
+    .resume-page{
+        width: 98%;
+        margin-left: 1%;
     }
     .resume-list{
         text-align: center;
@@ -136,4 +159,16 @@
         margin-left: 0;
         text-align: center;
     }
+    .resume-item h4{
+        width: 15%;
+        margin: auto;
+    }
+     h1 { font-size: 1.75rem; } /* 28px */
+    h2 { font-size: 1.5rem; }  /* 24px */
+    p, a, button { font-size: 0.95rem; } /* Slightly smaller for compact screens */
 }
+@media (max-width: 480px) { /* Small phones */
+    h1 { font-size: 1.5rem; } /* 24px */
+    h2 { font-size: 1.25rem; } /* 20px */
+    p, a, button { font-size: 0.9rem; } /* 14px */
+} */

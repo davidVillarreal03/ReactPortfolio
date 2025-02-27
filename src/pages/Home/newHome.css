@@ -513,4 +513,14 @@
     .intro-card{
         order: 2;
     }
+    h1 { font-size: 1.75rem; } /* 28px */
+    h2 { font-size: 1.5rem; }  /* 24px */
+    p, a, button { font-size: 0.95rem; } /* Slightly smaller for compact screens */
+    
+}
+
+@media (max-width: 480px) { /* Small phones */
+    h1 { font-size: 1.5rem; } /* 24px */
+    h2 { font-size: 1.25rem; } /* 20px */
+    p, a, button { font-size: 0.9rem; } /* 14px */
 }
