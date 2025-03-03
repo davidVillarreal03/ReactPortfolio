@@ -93,10 +93,11 @@ export default function AboutMe () {
                                 <li className='tooltip' data-tooltip='60-minute strategy call to discuss website improvements.'>Monthly Strategy Calls</li>
                                 <li className='tooltip' data-tooltip='Flexibility to make changes as their business evolves.'>Unlimited Revisions</li>
                             </ul>
-                            <p>The ultimate package for businesses tha demand top-tier web development and ongoing support.</p>
+                            <p>The ultimate package for businesses that demand top-tier web development and ongoing support.</p>
                             <span><button>Subscribe Now</button></span>
                         </div>
                     </div>
+                    <p>Decided on which one you want? Please contact me via email @ <a href='mailto:davidvillarr3al@gmail.com'>davidvillarr3al@gmail.com</a></p>
                     <p className='note'>*Initial fee of $150 to start. Each subscription will be billed a month after the initial fee.
                     For more information on each subscription, please contact me.*</p>
                 </section>

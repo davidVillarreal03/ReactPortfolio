@@ -150,8 +150,11 @@
     }
     .aboutme-section p{
         padding: 15px;
-        font-size: 12px;
+        font-size: 16px;
         font-weight: bolder;
+    }
+    .aboutme-section h1{
+        font-size: 32px;
     }
     .clients{
         width: 80%;
@@ -178,34 +181,31 @@
     .subscription-cards{
         flex-direction: column;
     }
-    .subscriptions p{
-        font-size: 12px;
-    }
     .subscription-cards p, .subscription-cards ul li{
-        font-size: 10px;
+        font-size: 16px;
     }
     .subscription-cards h2{
-        font-size: 1.3rem;
+        font-size: 24px;
     }
     .subscription-cards h3{
-        font-size: 1.5rem;
+        font-size: 26px;
+    }
+    .subscription-cards button{
+        font-size: 16px;
     }
     .subscription-cards span{
-        font-size: 10px;
+        font-size: 13px;
     }
     .subscription-cards span button{
-        font-size: 10px;
+        font-size: 16px;
     }
     .subscription-card{
         width: 80%;
     }
-    h1 { font-size: 1.75rem; } /* 28px */
-    h2 { font-size: 1.5rem; }  /* 24px */
-    p, a, button { font-size: 0.95rem; } /* Slightly smaller for compact screens */
+    body h2{
+        font-size: 24px;
+    }
+    .subscriptions p{
+        font-size: 16px;
+    }
 }   
-
-@media (max-width: 480px) { /* Small phones */
-    h1 { font-size: 1.5rem; } /* 24px */
-    h2 { font-size: 1.25rem; } /* 20px */
-    p, a, button { font-size: 0.9rem; } /* 14px */
-}
