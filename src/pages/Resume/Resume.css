@@ -3,7 +3,6 @@
     margin-left: 15%;
 }
 .page-layout h1{
-    /* text-decoration: none; */
     margin: 0;
     padding-top: 3%;
 }
@@ -45,7 +44,7 @@
     text-align: center;
     border: 3px solid #6b3e3e;
     border-radius: 5px;
-    width: 10%;
+    width: 15%;
     padding: 2px;
     color: #6b3e3e;
     background-color: #d3c6c6;
@@ -101,13 +100,46 @@
     font-size: .8rem;
     border-radius: 5px;
 }
+.silent-hill-hr {
+    border: none;
+    height: 5px;
+    background: linear-gradient(to right, #6b3e3e, #490f0f);
+    position: relative;
+    margin: 30px 0;
+}
+
+.silent-hill-hr::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background: #490f0f;
+    border-radius: 50%;
+    box-shadow: 
+        -15px 10px 0 -2px #6b3e3e,
+        10px 15px 0 -3px #490f0f,
+        -5px 20px 0 -4px #6b3e3e;
+}
 
 
+@media (max-width: 834px) {
+    .page-layout{
+        margin: 0;
+    }
+    .resume-page{
+        width: 95%;
+        margin-left: 5%;
+    }
+}
 @media (max-width: 760px){
     .page-layout{
         margin: 0;
     }
     .resume-page{
+        width: 100%;
+        margin: 0;
     }
     .resume-container{
         flex-direction: column;
@@ -120,55 +152,18 @@
         margin: 0;
         padding: 0;
     }
-}
-/* @media (max-width: 768px) {
-    .page-layout{
-        margin-left: 0;
-    }
-    .resume-container{
-        margin-left: 0;
-        flex-direction: column;
-    }
-    .resume-page{
-        width: 98%;
-        margin-left: 1%;
-    }
-    .resume-list{
+    .proficiencies{
+        margin: 0;
         text-align: center;
-        margin-left: -10%;
-        width: 100%;
-    }
-    .resume-item li{
-        text-align: center;
-    }
-    .resume-item p{
-        text-align: center;
-        width: 100%;
-        font-size: medium;
     }
     .coding-skills{
         width: 100%;
+        text-align: center;
     }
     .knowledge{
         width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
     }
-    .proficiencies{
-        margin-left: 0;
-    }
-    .coding-skills{
-        margin-left: 0;
-        text-align: center;
-    }
-    .resume-item h4{
-        width: 15%;
-        margin: auto;
-    }
-     h1 { font-size: 1.75rem; } /* 28px */
-    h2 { font-size: 1.5rem; }  /* 24px */
-    p, a, button { font-size: 0.95rem; } /* Slightly smaller for compact screens */
 }
-@media (max-width: 480px) { /* Small phones */
-    h1 { font-size: 1.5rem; } /* 24px */
-    h2 { font-size: 1.25rem; } /* 20px */
-    p, a, button { font-size: 0.9rem; } /* 14px */
-} */
