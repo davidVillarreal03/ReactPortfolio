@@ -123,8 +123,7 @@
         -5px 20px 0 -4px #6b3e3e;
 }
 
-
-@media (max-width: 834px) {
+@media (max-width: 1300px) {
     .page-layout{
         margin: 0;
     }
