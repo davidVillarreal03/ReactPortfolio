@@ -9,8 +9,8 @@ export default function AboutMe () {
     return (
         <div className='home-page'>
 
-                <section className='aboutme-section' data-aos="fade-up">
                     <h2>About Me</h2>
+                <section className='aboutme-section' data-aos="fade-up">
                     <p>I am a junior web developer passionate about designing websites but mainly taking on the challenges that come with having to write logical applications. 
                     With 1 year of experience in full-stack development, I specialize in using Javascript language and React as the framework for my projects.</p>
                     <p>I am known for listening to my clients and meeting the expectations that are set for me in bringing an application that will meet their needs.
@@ -50,12 +50,12 @@ export default function AboutMe () {
                 <section className='subscriptions'>
                     <h2>Monthly subscriptions of services i provide</h2>
                     <p>Not sure which one you need? Start with Silver and upgrade at anytime!</p>
-                    <p>Hover over the bullet points to learn more!</p>
+                    {/* <p>Hover over the bullet points to learn more!</p> */}
                     {/* <p>Start with Silver and upgrade at anytime!</p> */}
                     <div className='subscription-cards'>
                         <div className='subscription-card' data-aos='fade-up'>
                             <h2>Silver</h2>
-                            <h3>$30<span>/month</span> <button>Free Trial</button></h3>
+                            <h3>$30<span>/month</span></h3>
                             {/* <button>Free Trial</button> */}
                             <ul>
                                 <li className='tooltip' data-tooltip='A one-time audit of your current website with actionable recommendations.'>Basic Website Audit</li>
@@ -65,7 +65,7 @@ export default function AboutMe () {
                                 <li>1-2 free consultations or introductory sessions per year.</li>
                             </ul>
                             <p>Perfect for start ups and small projects--get the essentials to build your online presence.</p>
-                            <span><button>Subscribe Now</button></span>
+                            {/* <span><button>Subscribe Now</button></span> */}
                         </div>
                         <div className='subscription-card' data-aos='fade-up'>
                             <h2 id='gold'>Gold</h2>
@@ -79,7 +79,7 @@ export default function AboutMe () {
                                 <li className='tooltip' data-tooltip='Premium plugins, themes, or development frameworks.'>Access to Advanced Tools</li>
                             </ul>
                             <p>Take your website to the next level with custom development and expert support.</p>
-                            <span><button>Subscribe Now</button></span>
+                            {/* <span><button>Subscribe Now</button></span> */}
                         </div>
                         <div className='subscription-card' data-aos='fade-up'>
                             <h2 id='platinum'>Platinum</h2>
@@ -93,10 +93,11 @@ export default function AboutMe () {
                                 <li className='tooltip' data-tooltip='60-minute strategy call to discuss website improvements.'>Monthly Strategy Calls</li>
                                 <li className='tooltip' data-tooltip='Flexibility to make changes as their business evolves.'>Unlimited Revisions</li>
                             </ul>
-                            <p>The ultimate package for businesses tha demand top-tier web development and ongoing support.</p>
-                            <span><button>Subscribe Now</button></span>
+                            <p>The ultimate package for businesses that demand top-tier web development and ongoing support.</p>
+                            {/* <span><button>Subscribe Now</button></span> */}
                         </div>
                     </div>
+                    <p>Decided on which one you want? Please contact me via email @ <a href='mailto:davidvillarr3al@gmail.com'>davidvillarr3al@gmail.com</a></p>
                     <p className='note'>*Initial fee of $150 to start. Each subscription will be billed a month after the initial fee.
                     For more information on each subscription, please contact me.*</p>
                 </section>
