@@ -50,7 +50,7 @@ export default function AboutMe () {
                 <section className='subscriptions'>
                     <h2>Monthly subscriptions of services i provide</h2>
                     <p>Not sure which one you need? Start with Silver and upgrade at anytime!</p>
-                    <p>Hover over the bullet points to learn more!</p>
+                    {/* <p>Hover over the bullet points to learn more!</p> */}
                     {/* <p>Start with Silver and upgrade at anytime!</p> */}
                     <div className='subscription-cards'>
                         <div className='subscription-card' data-aos='fade-up'>

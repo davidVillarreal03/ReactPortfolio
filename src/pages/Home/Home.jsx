@@ -9,8 +9,8 @@ export default function Home() {
     }, [])
     return (
         <div className='home-page'>
+            <h2>Home</h2>
             <section className='content-preview'>
-                <h2>Home</h2>
                 <div className='aboutme'>
                     <div className='content-card' data-aos="fade-right">
                         <h3>Web Developer</h3>                        

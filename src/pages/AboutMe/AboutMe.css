@@ -141,6 +141,13 @@
  #platinum{
     color: Silver;
  }
+@media (max-width: 1300px) {
+    .subscriptions{
+        width: 90%;
+        /* margin-bottom: 40px; */
+    }
+
+}
 @media (max-width: 768px) {
     .aboutme-section{
         width: 80%;
