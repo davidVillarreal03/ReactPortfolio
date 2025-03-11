@@ -21,7 +21,7 @@ const SlideInNavBar = () => {
       {/* Side Navigation */}
       <nav className={`side-nav ${isOpen ? "active" : ""}`}>
         <div className='name-card'>
-            <img className='headshot'src='../../Images/head.jpg'></img>
+            <img className='headshot'src='../../Images/selfie.jpg'></img>
             <h1>David Villarreal</h1>
             <h2>Web Developer</h2>
             <div className='contacts-container'>
