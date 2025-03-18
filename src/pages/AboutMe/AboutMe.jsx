@@ -55,7 +55,7 @@ export default function AboutMe () {
                     <div className='subscription-cards'>
                         <div className='subscription-card' data-aos='fade-up'>
                             <h2>Silver</h2>
-                            <h3>$50<span>/month</span></h3>
+                            <h3>$60<span>/month</span></h3>
                             {/* <button>Free Trial</button> */}
                             <ul>
                                 <li className='tooltip' data-tooltip='A one-time audit of your current website with actionable recommendations.'>Basic Website Audit</li>
@@ -69,7 +69,7 @@ export default function AboutMe () {
                         </div>
                         <div className='subscription-card' data-aos='fade-up'>
                             <h2 id='gold'>Gold</h2>
-                            <h3>$100<span>/month</span></h3>
+                            <h3>$120<span>/month</span></h3>
                             {/* <button>Free Trial</button> */}
                             <ul>
                                 <li className='tooltip' data-tooltip='A one-time audit of your current website with actionable recommendations.'>Everything in the Silver tier</li>
@@ -83,7 +83,7 @@ export default function AboutMe () {
                         </div>
                         <div className='subscription-card' data-aos='fade-up'>
                             <h2 id='platinum'>Platinum</h2>
-                            <h3>$250<span>/month</span></h3>
+                            <h3>$300<span>/month</span></h3>
                             {/* <button>Free Trial</button> */}
                             <ul>
                                 <li className='tooltip' data-tooltip='A one-time audit of your current website with actionable recommendations.'>Everything in the Gold tier</li>
