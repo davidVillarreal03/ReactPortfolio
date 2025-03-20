@@ -49,6 +49,9 @@ export default function AboutMe () {
                 </section>
                 <section className='subscriptions'>
                     <h2>Monthly subscriptions of services i provide</h2>
+                    <p>Decided on which one you want? Please contact me via email @ <a href='mailto:davidvillarr3al@gmail.com'>davidvillarr3al@gmail.com</a></p>
+                    <p className='note'>*Initial fee of $150 to start. Each subscription will be billed a month after the initial fee.
+                    For more information on each subscription, please contact me.*</p>
                     <p>Not sure which one you need? Start with Silver and upgrade at anytime!</p>
                     {/* <p>Hover over the bullet points to learn more!</p> */}
                     {/* <p>Start with Silver and upgrade at anytime!</p> */}
@@ -97,9 +100,6 @@ export default function AboutMe () {
                             {/* <span><button>Subscribe Now</button></span> */}
                         </div>
                     </div>
-                    <p>Decided on which one you want? Please contact me via email @ <a href='mailto:davidvillarr3al@gmail.com'>davidvillarr3al@gmail.com</a></p>
-                    <p className='note'>*Initial fee of $150 to start. Each subscription will be billed a month after the initial fee.
-                    For more information on each subscription, please contact me.*</p>
                 </section>
                 {/* <section className='fun-facts'>
                     <h2>Fun facts about myself</h2>
