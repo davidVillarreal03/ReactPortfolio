@@ -48,12 +48,16 @@ export default function AboutMe () {
                     </div>
                 </section>
                 <section className='subscriptions'>
-                    <h2>Monthly subscriptions of services i provide</h2>
-                    <p>Decided on which one you want? Please contact me via email @ <a href='mailto:davidvillarr3al@gmail.com'>davidvillarr3al@gmail.com</a></p>
-                    <p className='note'>*Initial fee of $150 to start. Each subscription will be billed a month after the initial fee.
-                    For more information on each subscription, please contact me.*</p>
+                    <h2>Pricing of services i provide</h2>
+                    <p className='note'>*Initial fee of $150, this will cover the first 6 hours of work to start the project. 
+                        After the project has hit 6 hours the hourly rate will be $22 an hour. I determine this using an application called <a href='https://wakatime.com/faq#:~:text=WakaTime%20detects%20and%20creates%20projects,folder%20as%20the%20project%20name.'>wakatime </a>, for example this
+                        project has been in development for <a href="https://wakatime.com/badge/user/97b58457-081b-4940-99c7-9888a9b41405/project/7e85351a-bd20-459a-876d-fed5f629d82b"><img src="https://wakatime.com/badge/user/97b58457-081b-4940-99c7-9888a9b41405/project/7e85351a-bd20-459a-876d-fed5f629d82b.svg" alt="wakatime"></img></a>. 
+                         A reminder will be sent an hour prior to the limit, I will then assess your project and meet with you to determine if you would like to work with me longer. *</p>
+                    <p>Below are the packages that I offer to my clients who want constant support after the project is complete.</p>
                     <p>Not sure which one you need? Start with Silver and upgrade at anytime!</p>
+                    <p>Decided on which one you want? Please contact me via email @ <a href='mailto:davidvillarr3al@gmail.com'>davidvillarr3al@gmail.com</a></p>
                     {/* <p>Hover over the bullet points to learn more!</p> */}
+                    <h2>Monthly subscriptions</h2>
                     {/* <p>Start with Silver and upgrade at anytime!</p> */}
                     <div className='subscription-cards'>
                         <div className='subscription-card' data-aos='fade-up'>

@@ -22,7 +22,7 @@
 }
 .note {
     font-size: 14px;
-    font-style: italic;
+    /* font-style: italic; */
     color: #ccc;
 }
 
