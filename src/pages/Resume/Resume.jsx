@@ -1,18 +1,28 @@
 import './Resume.css'
+import AOS from 'aos';
+import { useEffect } from 'react';
+import { useTheme } from '../../context/ThemeContext';
 export default function Resume() {
+    const { theme, toggleTheme } = useTheme();
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    })
     return (
-        <section className='page-layout'>
+        <section className={`page-layout ${theme}`}>
              <a href='/David_Villarreal.pdf' download='David_Villarreal.pdf' class='download-btn'>
                 <h1>Resume</h1>
             </a>
             <h5>1 Year of Experience in Full-Stack Development</h5>
             <hr className='silent-hill-hr'></hr>
-        <div className='resume-page'>
+        <div className={`resume-page ${theme}`}>
             <div className='resume-container'>
                 {/* <h1>Proficiencies</h1> */}
-                <div className='resume-list'>
+                <div className={`resume-list ${theme}`}>
                 <h2>Education</h2>
-                    <div className='resume-item'>
+                    <div className={`resume-item ${theme}`}>
                         <h4 id='first'>2024</h4>
                         <h3>The University of Texas at San Antonio School of Data Science</h3> 
                         <h5>Coding Boot Camp</h5>
@@ -59,7 +69,7 @@ export default function Resume() {
                         {/* <hr className='silent-hill-hr'></hr> */}
                     </div>
                 </div>
-                <div className='resume-list'>
+                <div className={`resume-list ${theme}`}>
                     <div className='proficiencies'>
                     <h2>Design Skills</h2>
                     <div className='coding-skills'>    

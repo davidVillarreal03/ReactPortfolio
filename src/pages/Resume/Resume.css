@@ -103,12 +103,12 @@
 .silent-hill-hr {
     border: none;
     height: 5px;
-    background: linear-gradient(to right, #6b3e3e, #490f0f);
+    background: linear-gradient(to right, #a89f9f, #776d6d);
     position: relative;
     margin: 30px 0;
 }
 
-.silent-hill-hr::after {
+/* .silent-hill-hr::after {
     content: "";
     position: absolute;
     left: 50%;
@@ -121,6 +121,27 @@
         -15px 10px 0 -2px #6b3e3e,
         10px 15px 0 -3px #490f0f,
         -5px 20px 0 -4px #6b3e3e;
+} */
+.page-layout.dark a h1{
+    color: #e0c9a6;
+}
+.page-layout.dark h5{
+    color: #bfa5a5;
+}
+.resume-page.dark{
+    color: #e0c9a6;
+}
+.resume-list.dark p{
+    color: #d4bebe;
+}
+.resume-list.dark h3{
+    color: #e0c9a6;
+}
+.resume-list.dark h4{
+    border: 3px solid #8d6f6f;
+}
+.resume-list.dark li{
+    color: #d4bebe;
 }
 
 @media (max-width: 1300px) {

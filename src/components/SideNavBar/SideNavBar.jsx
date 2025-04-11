@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { useTheme } from '../../context/ThemeContext';
 import "./SideNavBar.css";
 const SlideInNavBar = () => {
+  const { theme, toggleTheme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
-
   const toggleNav = () => setIsOpen(!isOpen); // Toggle the state
   const closeSidebar = () => setIsOpen(false);
 
@@ -12,15 +13,15 @@ const SlideInNavBar = () => {
     <div  className="side-nav-container">
       {/* Menu Button */}
       <button
-        className="menu-btn"
+        className={`menu-btn ${theme}`}
         onClick={toggleNav}
         aria-label="Toggle Navigation"
       >
         ☰ Menu
       </button>
       {/* Side Navigation */}
-      <nav className={`side-nav ${isOpen ? "active" : ""}`}>
-        <div className='name-card'>
+      <nav className={`side-nav ${theme} ${isOpen ? "active" : ""}`}>
+        <div className={`name-card ${theme}`}>
             <img className='headshot'src='../../Images/selfie.jpg'></img>
             <h1>David Villarreal</h1>
             <h2>Web Developer</h2>
@@ -41,7 +42,9 @@ const SlideInNavBar = () => {
                         <i class="fa-brands fa-stack-overflow"></i>
                     </a> 
                 </div>
+                {/* <button>?</button> */}
             </div>
+            <button className={`theme-btn ${theme}`} onClick={toggleTheme}>{theme === 'light' ? 'Otherworld' : 'Fog World'}?</button>
         </div>
         {/* <button onClick={closeSidebar} className='close-btn'>&times;</button> */}
         <ul>
@@ -51,6 +54,7 @@ const SlideInNavBar = () => {
             {/* <li><Link to="/Contact" onClick={closeSidebar}>Contact <i class="fa-solid fa-paper-plane"></i></Link></li> */}
             <li><Link to="/Resume" onClick={closeSidebar}>Resume <i class="fas fa-file-alt"></i></Link></li>
         </ul>
+        {/* <button></button> */}
       </nav>
     </div>
   );

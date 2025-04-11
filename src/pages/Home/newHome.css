@@ -15,6 +15,7 @@
     justify-content: center;
     background-color: #b0b1b4;  
     margin-left: 240px;
+    transition: background-color 0.5s ease, color 0.5s ease
 }
 
 .content-preview{
@@ -64,26 +65,54 @@
     color: #e8e8e6;
 }
 
-.aboutme button:hover{
+.aboutme.dark button{
+    background-color: #3a3a3a;
+}
+
+.aboutme.light button:hover{
     background-color: #6d7055;
+}
+.aboutme.dark button:hover{
+    background-color: #c2542c;
 }
 
 
 .mia{
+    /* display: flex; */
     order: 1;
     width: 20%;
+    /* height: 10%; */
     /* flex: 1; */
 }
 .mia img{
     width: 100%;
 }
+/* .mia{
+    background: url('../../../public/Images/mia.png') no-repeat center center / cover;
+}
+.mia.dark{
+    background: url('../../../public/Images/logoDark.png') no-repeat center center / cover;
+} */
+.mia.light{
+    display:none;
+}
+.mia.dark{
+    display:none;
+}
 
 .content-card{
-    background-color: #d2c8b3;
+    /* background-color: #d2c8b3; */
     border-radius: 10px;
     padding: 30px 20px;
-    color: #3A3A3A;
+    /* color: #3A3A3A; */
     width: 80%;
+}
+.content-card.light{
+    background-color: #d2c8b3;
+}
+.content-card.dark{
+    background-color: #c9b9a9;
+    color: #d2c8b3;
 }
 
 .content-card h1, p, h3{
@@ -152,9 +181,9 @@
     border-radius: 10px;
     margin: 5px;
     padding: 10px;
-    background-color: #4a3c3c; /* Muted dark brown with a worn feel */
-    color: #d3c6c6; /* Faded white, slightly dusty */
-    border: 2px solid #7b1e1e; /* Blood-stain inspired border */
+    color: #888c8f; /* Dark text */
+    background-color: #4e5c6a; /* Blood-red background */
+    border: 1px solid #64696d; /* Faded white border */
     border-radius: 50%; /* Circular buttons */
     font-size: 1.5rem; /* Icon size */
     transition: all 0.4s ease; /* Smooth transition for hover effects */
@@ -162,10 +191,13 @@
     position: relative; /* For overlay effects */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Subtle worn-out shadow */
 }
+.contact-text.dark button{
+    background-color: #4a3c3c;
+    color: #d3c6c6;
+    border: 2px solid #7b1e1e;
+}
 .contact-text button:hover {
-    background-color: #7b1e1e; /* Dark red hover effect */
-    color: #e4dcdc; /* Light faded color for contrast */
-    border-color: #d3c6c6; /* Inverse border for emphasis */
+    filter: blur(1px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6); /* Intensified shadow */
     transform: translateY(-4px); /* Slight lift on hover */
 }
@@ -197,9 +229,9 @@
     max-width: 800px; /* Increased width from 600px to 800px */
     margin: 0 auto;
     padding: 15px;
-    background: #3c3333; /* Muted, worn dark gray */
+    background: #888c8f; /* Muted, worn dark gray */
     color: #d3c6c6; /* Faded off-white */
-    border: 1px solid #7b1e1e; /* Subtle blood-red border */
+    border: 1px solid #64696d; /* Subtle blood-red border */
     border-radius: 8px; /* Rounded edges */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Deep shadow for a moody look */
     background-image: radial-gradient(
@@ -207,6 +239,10 @@
         rgba(255, 255, 255, 0.05) 0%,
         rgba(0, 0, 0, 0.2) 100%
     ); /* Subtle texture effect */
+}
+.contact-form.dark{
+    background: #3c3333;
+    border: 1px solid #7b1e1e;
 }
 
 /* Heading */
@@ -232,14 +268,19 @@
     width: 100%;
     /* padding: 10px; */
     margin-bottom: 20px;
-    background-color: #4a3c3c; /* Dark worn background */
-    border: 1px solid #7b1e1e; /* Blood-red border */
+    background-color: silver;
+    border: 1px solid #3A3A3A; /* Blood-red border */
     color: #d3c6c6;
     border-radius: 4px;
     font-size: 1rem;
     font-family: 'Arial', sans-serif;
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5); /* Inner shadow for depth */
     transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+.contact-form.dark input,
+.contact-form.dark textarea{
+    background-color: #4a3c3c;
+    border: 1px solid #7b1e1e;
 }
 
 .contact-form input:focus,
@@ -256,19 +297,25 @@
     padding: 12px 20px;
     font-size: 1rem;
     font-weight: bold;
-    color: #3c3333; /* Dark text */
-    background-color: #7b1e1e; /* Blood-red background */
-    border: 1px solid #e4dcdc; /* Faded white border */
+    color: #d7d8d6; /* Dark text */
+    background-color: #4e5c6a; /* Blood-red background */
+    border: 1px solid #64696d; /* Faded white border */
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Subtle worn-out shadow */
 }
 
+.contact-form.dark button{
+    background-color: #7b1e1e;
+    color: #3c3333;
+    border: 1px solid #e4dcdc;
+}
+
 .contact-form button:hover {
-    background-color: #a12323; /* Brighter blood-red */
     transform: translateY(-2px); /* Slight lift effect */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Shadow on hover */
+    filter: blur(1px);
 }
 
 #contact{
@@ -282,13 +329,17 @@
     align-items: center;
     width: 100%;
 }
+
 .service{
     margin: 10px;
     padding: 10px;
-    background-color: #3A3A3A;
+    background-color: #888c8f;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
     color: #d3c6c6;
+}
+.service.dark{
+    background-color: #3A3A3A;
 }
 .service p{
     color: #d3c6c6;
@@ -308,10 +359,13 @@
 .skill{
     margin: 10px;
     padding: 10px;
-    background-color: #3A3A3A;
+    background-color: #888c8f;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
     color: #d3c6c6;
+}
+.skill.dark{
+    background-color: #3A3A3A;
 }
 .skill p{
     color: #d3c6c6;
@@ -413,6 +467,15 @@
 }
 .sources{
     display: inline-flex;
+}
+.home-page.light{
+    background-color: #b0b1b4;
+    color: #3A3A3A;
+    /* transition: */
+}
+.home-page.dark{
+    background-color: #4a2e2e;
+    color: #d2c8b3;
 }
 @media (min-width: 769px) {
     #mobile{

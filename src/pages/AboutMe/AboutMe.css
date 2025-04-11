@@ -122,6 +122,15 @@
     font-style: italic;
     margin: 0px;
  }
+ .subscription-card.dark h3{
+    color: #e36d38;
+ }
+ .subscription-card.dark li{
+    color: #d9d1c7;
+ }
+ .subscription-card.dark span{
+    color: #d9d1c7;
+ }
  .subscription-card span{
     color: #e4e1d4;
     font-size: .8rem;
@@ -135,12 +144,41 @@
     font-size: 1rem;
     margin-top: 20px;
  }
+ .subscription-card.dark{
+    background-color: #7c4935;
+ }
  #gold{
     color: gold;
  }
  #platinum{
     color: Silver;
  }
+ .aboutme-section.dark{
+    background-color: #2f2522;
+ }
+ .aboutme-section.dark p{
+    color: #cfc4b2;
+ }
+ .subscriptions.dark{
+    background-color: #2f2522;
+ }
+ .subscriptions.dark p{
+    color: #cfc4b2;
+ }
+ .subscriptions.dark a{
+    color: #c2542c;
+ }
+ .subscriptions.dark a:active{
+    color: #702014;
+ }
+ .subscriptions.dark a:hover{
+    color: #a62117;
+    text-shadow: 0 0 2px #e36d38;
+ }
+ .subscriptions.dark a:visited{
+    color: #74483e;
+ }
+
 @media (max-width: 1300px) {
     .subscriptions{
         width: 90%;

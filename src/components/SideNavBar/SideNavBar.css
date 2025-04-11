@@ -15,24 +15,27 @@
     border-radius: 5px;
     z-index: 1000;
 }
-
-.menu-btn:focus{
-    outline: none;
-}
-.close-btn{
-    position: absolute;
-    top: 10px;
-    right: 10px;
+/* .menu-btn.dark{
     background-color: #2c2c2c;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    font-size: 0.7rem;
-    cursor: pointer;
-    border-radius: 5px;
-    z-index: 1000;
-}
-.side-nav {
+    } */
+    .menu-btn:focus{
+        outline: none;
+    }
+    .close-btn{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: #2c2c2c;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        font-size: 0.7rem;
+        cursor: pointer;
+        border-radius: 5px;
+        z-index: 1000;
+    }
+    .side-nav {
+    transition: all 0.7s ease;
     position: fixed;
     top: 0;
     left: -250px;
@@ -43,6 +46,9 @@
     transition: left 0.3s ease-in-out;
     z-index: 999;
     /* padding-top: 60px; */
+}
+.side-nav.dark{
+    background: url('../../../public/Images/frontOfPolaroid.png') no-repeat center center / cover;
 }
 .side-nav ul {
     list-style: none;
@@ -96,6 +102,9 @@
 
 }
 
+.name-card.dark{
+    background: url('../../../public/Images/frontOfPolaroid.png') no-repeat center center / cover;
+}
 .name-card h1{
     margin: 0;
 }
@@ -134,6 +143,29 @@
     transition: all 0.5s ease;
 }
 
+@keyframes pulseGlow {
+    0% { box-shadow: 0 0 8px rgba(139, 0, 0, 0.6); border-color: #8B0000; }
+    50% { box-shadow: 0 0 18px rgba(194, 84, 44, 0.8); border-color: #C2542C; }
+    100% { box-shadow: 0 0 8px rgba(139, 0, 0, 0.6); border-color: #8B0000; }
+}
+.theme-btn.light{
+    background-color: #2c2c2c;
+    border: 2px solid #8B0000; /* Deep Blood Red */
+    padding: 7px;
+    animation: pulseGlow 3s infinite ease-in-out;
+    color: #e8e8e6;
+}
+.theme-btn.dark{
+    background-color: gray;
+    color: white;
+    padding: 7px;
+    border: 2px solid rgb(147, 172, 145);
+}
+.menu-btn.dark{
+    background-color: #2c2c2c;
+    /* color: gray; */
+    border: 1px solid #7b1e1e;
+}
 
 @media (min-width: 1300px) {
     .menu-btn {

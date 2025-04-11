@@ -1,18 +1,26 @@
 import './newHome.css'
 import { useEffect } from 'react'
+import { useTheme } from '../../context/ThemeContext';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 // import './David_Villarreal.pdf'
 export default function Home() {
+    const { theme, toggleTheme } = useTheme();
     useEffect(() => {
-        AOS.init();
+        AOS.init({
+            duration: 1000,
+            once: true,
+        }
+        );
     }, [])
     return (
-        <div className='home-page'>
+        <div className={`home-page ${theme}`}>
+            {/* <p>Currently in: {theme}</p> */}
+            {/* <button onClick={toggleTheme}>{theme === 'light' ? 'Otherworld' : 'Fog World'}?</button> */}
             <h2>Home</h2>
             <section className='content-preview'>
-                <div className='aboutme'>
-                    <div className='content-card' data-aos="fade-right">
+                <div className={`aboutme ${theme}`}>
+                    <div className={`content-card ${theme}`} data-aos="fade-right">
                         <h3>Web Developer</h3>                        
                         <h1 id='desktop'>Hello World,
                             I am David Villarreal</h1>
@@ -51,88 +59,83 @@ export default function Home() {
                             </a>
                         </div>
                     </div>
-                    <div className='mia' data-aos="fade-left">
-                        <img src='/Images/mia.png'></img>
+                    <div className={`mia ${theme}`} data-aos="fade-left">
+                        <img src='/Images/ logoDark.png' className='image light'></img>
+                        {/* <img src='/Images/logo.png' className='image dark'></img> */}
                     </div>
                 </div>
             </section>
             
-            
-            <section className='resume-preview'> 
-
-            </section>
-            
-
             <section className='content-preview'>
                 
-                <div className='content-card' data-aos="fade-right">
+                <div className={`content-card ${theme}`} data-aos="fade-right">
                     <h1>Skills</h1>
                     <h3>What I Do</h3>
                     <div className='services'>
-                        <div className='service'>
+                        <div className={`service ${theme}`}>
                             <i class="fa-solid fa-desktop"><p>Web Design</p></i>
                         </div>
-                        <div className='service'>
+                        <div className={`service ${theme}`}>
                             <i class='fa-solid fa-computer'><p>Web Application Development</p></i>
                         </div>
-                        <div className='service'>
+                        <div className={`service ${theme}`}>
                             <i class='fa-solid fa-code'><p>Full-Stack Development</p></i>
                         </div>
-                        {/* <div className='service'>
+                        {/* <div className={`service ${theme}`}>
                             <i class='fa-solid fa-palette'><p>UI/UX Design</p></i>
                         </div> */}
-                        <div className='service'>
+                        <div className={`service ${theme}`}>
                             <i class='fa-solid fa-cart-shopping'><p>E-commerce (Integrated with <a href='https://stripe.com/'>Stripe</a>)</p></i>
                         </div>
-                        <div className='service'>
+                        <div className={`service ${theme}`}>
                             <i class='fa-solid fa-database'><p>Databases</p></i>
                         </div>
                         </div>
                 <h3>Proficiencies</h3>
                 <div className='my-skills'>
-                        <div className='skill'>
+                        <div className={`skill ${theme}`}>
                             <i class="fa-brands fa-html5"><p>HTML</p></i>
                         </div>
-                        <div className='skill'>
+                        <div className={`skill ${theme}`}>
                             <i class="fa-brands fa-css3-alt"><p>CSS</p></i>
                         </div>
-                        <div className='skill'>
+                        <div className={`skill ${theme}`}>
                             <i class="fa-brands fa-js"><p>JavaScript</p></i>
                         </div>
-                        <div className='skill'>
+                        <div className={`skill ${theme}`}>
                             <i class="fa-brands fa-react"><p>React</p></i>
                         </div>
-                        <div className='skill'>
+                        <div className={`skill ${theme}`}>
                             <i class="fa-brands fa-node-js"><p>Node.js</p></i>
                         </div>
-                        <div className='skill'>
+                        <div className={`skill ${theme}`}>
                             <i class="fa-brands fa-git-alt"><p>Git</p></i>
                         </div>
-                        <div className='skill'>
+                        <div className={`skill ${theme}`}>
                             <i class="fa-brands fa-github"><p>GitHub</p></i>
                         </div>
-                        <div className='skill'>
+                        <div className={`skill ${theme}`}>
                             <i class="fa-brands fa-npm"><p>npm</p></i>
                         </div>
-                        {/* <div className='skill'>
+                        {/* <div className={`skill ${theme}`}>
                             <i class="fa-brands fa-bootstrap"><p>Bootstrap</p></i>
                         </div> */}
-                        <div className='skill'>
+                        <div className={`skill ${theme}`}>
                             <i class='fa-solid fa-database'><p>MongoDB</p></i>
                         </div>
-                        <div className='skill'>
+                        <div className={`skill ${theme}`}>
                             <i class='fa-solid fa-database'><p>SQL</p></i>
                         </div>
-                        <div className='skill'>
+                        <div className={`skill ${theme}`}>
                             <i class='fa-solid fa-download'><p>PWAs</p></i>
                         </div>
                     </div>
                 </div>
 
                 <div className='contact' data-aos="fade-up">
-                    <div className='content-card' id='contact'>
+                    <div className={`content-card ${theme}`} id='contact'>
                             <div className='contact-container'>
-                            <div className='contact-text'>
+                            <div className={`contact-text ${theme}`}>
                                 <h3>Lets Connect!</h3>
                                 <h1>Contacts & Socials:</h1>
                                 <ul>
@@ -155,7 +158,7 @@ export default function Home() {
                                 </ul>
                             </div>
 
-                            <form action="https://formsubmit.co/davidvillarr3al@gmail.com" method="POST"className="contact-form" data-aos="fade-down">
+                            <form action="https://formsubmit.co/davidvillarr3al@gmail.com" method="POST"className={`contact-form ${theme}`} data-aos="fade-down">
                                 <input type="hidden" name="_subject" value="New Contact Form Submission"></input>
                                 <input type="hidden" name="_next" value="https://davidvillarreal.netlify.app/thankyou"></input>
                                 <input type="hidden" name="_template" value="table"></input>
@@ -182,7 +185,7 @@ export default function Home() {
             </section>
             
             <section className='content-preview' data-aos='zoom-in'>
-                <div className='content-card'>
+                <div className={`content-card ${theme}`}>
                     <h1>favorite Projects</h1>
                     <div className='polaroids'>
                         <div className='polaroid-container'>
